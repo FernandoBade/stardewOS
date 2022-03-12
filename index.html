@@ -36,7 +36,7 @@
                     <span class="minimize" onclick="maximizeHandler('folder')"></span>
                     <span class="close" onclick="windowHandler('folder')"></span>
                 </section>
-                <span class="window-name">Trash</span>
+                <span class="window-name">Deleted Items</span>
             </header>
 
             <section class="window-content folder">
@@ -46,7 +46,7 @@
                 </aside>
 
                 <main>
-                    
+
                     <ul class="icons">
 
                         <li class="icon">
@@ -67,6 +67,19 @@
 
         </section>
 
+        <section class="window hidded" id="wiki">
+
+            <header class="window-header" id="wikiHeader">
+                <section class="buttons">
+                    <span class="maximize"></span>
+                    <span class="minimize" onclick="maximizeHandler('wiki')"></span>
+                    <span class="close" onclick="windowHandler('wiki')"></span>
+                </section>
+                <span class="window-name">Stardew Valley Wiki</span>
+            </header>
+            <iframe src="https://stardewvalleywiki.com/Stardew_Valley_Wiki" frameborder="0"></iframe>
+
+        </section>
         <section class="window hidded" id="browser">
 
             <header class="window-header" id="browserHeader">
@@ -91,9 +104,7 @@
                 </section>
                 <span class="window-name">Stardew Valley Map Planner</span>
             </header>
-            <iframe
-                src="https://stardew.info/planner/"
-                loading="lazy"></iframe>
+            <iframe src="https://stardew.info/planner/" loading="lazy"></iframe>
 
         </section>
 
@@ -107,8 +118,7 @@
                 </section>
                 <span class="window-name">Code</span>
             </header>
-            <iframe src="https://stackblitz.com/edit/web-platform-li1mtd?embed=1&file=index.html" id="stackBlitz"
-                loading="lazy"></iframe>
+            <iframe src="https://github.com/FernandoBade/stardewOS" id="stackBlitz" loading="lazy"></iframe>
 
         </section>
 
@@ -126,37 +136,41 @@
 
         <ul class="icons">
 
-            <li class="icon" onclick="windowHandler('folder')">
-                <img src="img/trash-icon.png">
-                <h1>trash</h1>
+
+            <li class="icon" onclick="windowHandler('wiki')">
+                <img src="img/house.png">
+                <h1>Stardew Wiki</h1>
+            </li>
+
+            <li class="icon" onclick="windowHandler('map')">
+                <img src="img/Robin.png">
+                <h1>Map Planner</h1>
+
+            </li>
+
+            <li class="icon" onclick="windowHandler('browser')">
+                <img src="img/Abigail.png">
+        
+                <h1>Browser</h1>
+
             </li>
 
             <li class="icon" onclick="windowHandler('folder')">
-                <img src="img/stardew-icon.png">
-                <h1>Stardew Valley</h1>
+                <img src="img/joja.png">
+                <h1>Recycle Bin</h1>
             </li>
-
-            <li class="icon">
-                <img src="img/terraria-icon.jpg">
-                <h1>Terraria</h1>
-            </li>
-
-            <li class="icon">
-                <img src="img/skyrim-icon.png">
-                <h1>Skyrim</h1>
-            </li>
-
         </ul>
 
     </main>
 
     <footer>
         <section class="icon-wrapper">
-            <img src="https://img.icons8.com/color/344/computer.png">
-            <img src="https://img.icons8.com/color/344/chrome--v1.png" onclick="windowHandler('browser')">
-            <img src="https://img.icons8.com/color/344/map.png" onclick="windowHandler('map')">
-            <img src="https://img.icons8.com/color/344/visual-studio-code-2019.png" onclick="windowHandler('code')">
-            <img src="img/steam-icon.png">
+            Recently Played:
+            <img src="img/game1.png">
+            <img src="img/game2.png">
+            <img src="img/game3.png">
+            <img src="img/game4.png">
+
         </section>
     </footer>
 
