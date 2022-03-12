@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Javascript OS - The Web OS</title>
+</head>
+
+<body>
+    <audio id="heartbeat" src="/pika.mp3" preload="auto">
+    </audio>
+
+    <!-- <section class="booting" id="bootSection">
+        <div>
+            <h1>
+                <img src="img/loading-junimo.gif" alt="" srcset="" class="gif-loading"><br>
+                Loading...
+            </h1>
+        </div>
+    </section> -->
+
+    <main class="desktop">
+        <img src="img/cloud1.png" class="cloud1">
+        <img src="img/cloud2.png" class="cloud2">
+        <img src="img/cloud3.png" class="cloud3">
+        <img src="img/cloud4.png" class="cloud4">
+        <section class="window" id="folder">
+
+            <header class="window-header" id="folderHeader">
+                <section class="buttons">
+                    <span class="close" onclick="windowHandler('folder')"></span>
+                    <span class="minimize" onclick="maximizeHandler('folder')"></span>
+                    <span class="maximize"></span>
+                </section>
+                <span class="window-name">folder</span>
+            </header>
+
+            <section class="window-content folder">
+
+                <aside>
+
+                </aside>
+
+                <main>
+
+
+                    <h1>Work in progress...</h1>
+
+                </main>
+
+            </section>
+
+        </section>
+
+        <section class="window hidded" id="browser">
+
+            <header class="window-header" id="browserHeader">
+                <section class="buttons">
+                    <span class="close" onclick="windowHandler('browser')"></span>
+                    <span class="minimize" onclick="maximizeHandler('browser')"></span>
+                    <span class="maximize"></span>
+                </section>
+                <span class="window-name">Browser</span>
+            </header>
+            <iframe src="https://www.bing.com/?cc=br" frameborder="0"></iframe>
+
+        </section>
+
+        <section class="window hidded" id="map">
+
+            <header class="window-header" id="mapHeader">
+                <section class="buttons">
+                    <span class="close" onclick="windowHandler('map')"></span>
+                    <span class="minimize" onclick="maximizeHandler('map')"></span>
+                    <span class="maximize"></span>
+                </section>
+                <span class="window-name">Map</span>
+            </header>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d467690.69940787245!2d-46.59530130347702!3d-23.681908383741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle%20maps!5e0!3m2!1spt-BR!2sbr!4v1645773854813!5m2!1spt-BR!2sbr"
+                loading="lazy"></iframe>
+
+        </section>
+
+        <section class="window hidded" id="code">
+
+            <header class="window-header" id="codeHeader">
+                <section class="buttons">
+                    <span class="close" onclick="windowHandler('code')"></span>
+                    <span class="minimize" onclick="maximizeHandler('code')"></span>
+                    <span class="maximize"></span>
+                </section>
+                <span class="window-name">Code</span>
+            </header>
+            <iframe src="https://stackblitz.com/edit/web-platform-li1mtd?embed=1&file=index.html" id="stackBlitz"
+                loading="lazy"></iframe>
+
+        </section>
+
+        
+        <section id="play" class="current-date">
+
+            <img class="gif-date" id="chicken-gif" src="img/chicken-gif.gif">
+            <span class="time">
+                <span id="currentHour"></span>:<span id="currentMinute"></span>
+            </span>
+            <span class="date">
+                <span id="currentDay"></span>/<span id="currentMonth"></span>/<span id="currentYear"></span>
+            </span>
+        </section>
+
+        <ul class="icons">
+
+            <li class="icon" onclick="windowHandler('folder')">
+                <img src="https://img.icons8.com/color/344/filled-trash.png">
+                <h1>trash</h1>
+            </li>
+
+            <li class="icon" onclick="windowHandler('StardewPlanner')">
+                <img src="https://img.icons8.com/color/344/folder-invoices--v1.png">
+                <h1>Map Planner</h1>
+            </li>
+
+            <li class="icon">
+                <img src="img/terraria-icon.jpg">
+                <h1>Terraria</h1>
+            </li>
+
+            <li class="icon">
+                <img src="img/skyrim-icon.png">
+                <h1>Skyrim</h1>
+            </li>
+
+            <li class="icon">
+                <img src="img/steam-icon.png">
+                <h1>Steam</h1>
+            </li>
+
+            <li class="icon">
+                <img src="img/discord-icon.png">
+                <h1>Discord</h1>
+            </li>
+
+
+        </ul>
+
+    </main>
+
+    <footer>
+        <section class="icon-wrapper">
+            <img src="https://img.icons8.com/color/344/computer.png">
+            <img src="https://img.icons8.com/color/344/chrome--v1.png" onclick="windowHandler('browser')">
+            <img src="https://img.icons8.com/color/344/map.png" onclick="windowHandler('map')">
+            <img src="https://img.icons8.com/color/344/visual-studio-code-2019.png" onclick="windowHandler('code')">
+            <img src="https://img.icons8.com/color/344/filled-trash.png">
+        </section>
+    </footer>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
