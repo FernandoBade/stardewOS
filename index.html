@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 
-    <title>Javascript OS - The Web OS</title>
+    <title>stardewOS</title>
 </head>
 
 <body>
@@ -32,11 +32,11 @@
 
             <header class="window-header" id="folderHeader">
                 <section class="buttons">
-                    <span class="close" onclick="windowHandler('folder')"></span>
-                    <span class="minimize" onclick="maximizeHandler('folder')"></span>
                     <span class="maximize"></span>
+                    <span class="minimize" onclick="maximizeHandler('folder')"></span>
+                    <span class="close" onclick="windowHandler('folder')"></span>
                 </section>
-                <span class="window-name">folder</span>
+                <span class="window-name">Trash</span>
             </header>
 
             <section class="window-content folder">
@@ -46,9 +46,20 @@
                 </aside>
 
                 <main>
+                    
+                    <ul class="icons">
 
+                        <li class="icon">
+                            <img src="img/cyberpunk-icon.png">
+                            <h1>Cyberpunk</h1>
+                        </li>
 
-                    <h1>Work in progress...</h1>
+                        <li class="icon">
+                            <img src="img/bf4-icon.png">
+                            <h1>Battlefield 4</h1>
+                        </li>
+
+                    </ul>
 
                 </main>
 
@@ -60,9 +71,9 @@
 
             <header class="window-header" id="browserHeader">
                 <section class="buttons">
-                    <span class="close" onclick="windowHandler('browser')"></span>
-                    <span class="minimize" onclick="maximizeHandler('browser')"></span>
                     <span class="maximize"></span>
+                    <span class="minimize" onclick="maximizeHandler('browser')"></span>
+                    <span class="close" onclick="windowHandler('browser')"></span>
                 </section>
                 <span class="window-name">Browser</span>
             </header>
@@ -74,14 +85,14 @@
 
             <header class="window-header" id="mapHeader">
                 <section class="buttons">
-                    <span class="close" onclick="windowHandler('map')"></span>
-                    <span class="minimize" onclick="maximizeHandler('map')"></span>
                     <span class="maximize"></span>
+                    <span class="minimize" onclick="maximizeHandler('map')"></span>
+                    <span class="close" onclick="windowHandler('map')"></span>
                 </section>
-                <span class="window-name">Map</span>
+                <span class="window-name">Stardew Valley Map Planner</span>
             </header>
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d467690.69940787245!2d-46.59530130347702!3d-23.681908383741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle%20maps!5e0!3m2!1spt-BR!2sbr!4v1645773854813!5m2!1spt-BR!2sbr"
+                src="https://stardew.info/planner/"
                 loading="lazy"></iframe>
 
         </section>
@@ -101,7 +112,7 @@
 
         </section>
 
-        
+
         <section id="play" class="current-date">
 
             <img class="gif-date" id="chicken-gif" src="img/chicken-gif.gif">
@@ -116,13 +127,13 @@
         <ul class="icons">
 
             <li class="icon" onclick="windowHandler('folder')">
-                <img src="https://img.icons8.com/color/344/filled-trash.png">
+                <img src="img/trash-icon.png">
                 <h1>trash</h1>
             </li>
 
-            <li class="icon" onclick="windowHandler('StardewPlanner')">
-                <img src="https://img.icons8.com/color/344/folder-invoices--v1.png">
-                <h1>Map Planner</h1>
+            <li class="icon" onclick="windowHandler('folder')">
+                <img src="img/stardew-icon.png">
+                <h1>Stardew Valley</h1>
             </li>
 
             <li class="icon">
@@ -135,17 +146,6 @@
                 <h1>Skyrim</h1>
             </li>
 
-            <li class="icon">
-                <img src="img/steam-icon.png">
-                <h1>Steam</h1>
-            </li>
-
-            <li class="icon">
-                <img src="img/discord-icon.png">
-                <h1>Discord</h1>
-            </li>
-
-
         </ul>
 
     </main>
@@ -156,7 +156,7 @@
             <img src="https://img.icons8.com/color/344/chrome--v1.png" onclick="windowHandler('browser')">
             <img src="https://img.icons8.com/color/344/map.png" onclick="windowHandler('map')">
             <img src="https://img.icons8.com/color/344/visual-studio-code-2019.png" onclick="windowHandler('code')">
-            <img src="https://img.icons8.com/color/344/filled-trash.png">
+            <img src="img/steam-icon.png">
         </section>
     </footer>
 

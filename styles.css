@@ -143,7 +143,7 @@ html {
 .desktop {
   width: 100%;
   height: 100vh;
-  background-color: #787878;
+  background-color: #323232;
   background-image: url("img/bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -170,7 +170,7 @@ html {
           animation-name: goRight;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  opacity: .9;
+  opacity: .7;
 }
 
 @-webkit-keyframes goRight {
@@ -206,7 +206,7 @@ html {
           animation-name: goLeft;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  opacity: .9;
+  opacity: .3;
 }
 
 @-webkit-keyframes goLeft {
@@ -242,7 +242,7 @@ html {
           animation-name: goLeft2;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  opacity: .9;
+  opacity: .7;
 }
 
 @-webkit-keyframes goLeft2 {
@@ -278,7 +278,7 @@ html {
           animation-name: goRight2;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  opacity: .9;
+  opacity: .3;
 }
 
 @-webkit-keyframes goRight2 {
@@ -356,9 +356,9 @@ html {
   display: -ms-flexbox;
   display: flex;
   padding-inline: 12px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -425,28 +425,45 @@ html {
           backdrop-filter: blur(4px);
 }
 
+.desktop .window .window-content .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  top: 10px;
+  left: 20px;
+}
+
 .desktop .window .window-content main {
   width: 100%;
   height: 100%;
-  background-color: #171717;
+  background-color: #303030;
   padding: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .desktop .window .window-content main h1 {
-  color: white;
-  font-weight: 100;
+  color: #fefefe;
+  font-weight: 300;
   text-align: center;
-  opacity: .6;
-  font-size: 32px;
+  font-size: 14px;
+}
+
+.desktop .window .window-content main h2 {
+  padding: 20px;
+  margin: 20xp;
+  display: block;
 }
 
 .desktop .current-date {
@@ -546,7 +563,7 @@ html {
 }
 
 .desktop .icons .icon:hover {
-  background-color: #30303030;
+  background-color: #aaaaaa30;
   cursor: pointer;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -570,7 +587,7 @@ html {
 
 .desktop .icons .icon h1 {
   color: white;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
 }
 
@@ -601,6 +618,8 @@ footer .icon-wrapper {
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   margin: 0 auto;
+  padding: 2px 10px 2px 10px;
+  gap: 10px;
 }
 
 footer .icon-wrapper:hover {
