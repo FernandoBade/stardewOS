@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+    font-family: 'Stardew Valley';
+    src: url('StardewValley.woff2') format('woff2'),
+        url('StardewValley.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 * {
 
@@ -113,7 +121,7 @@ html {
     width: 100%;
     height: 100vh;
     background-color: rgb(50, 50, 50);
-    background-image: url('img/bg.jpg');
+    background-image: url('img/bg-2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -130,12 +138,12 @@ html {
     .cloud1 {
         position: absolute;
         top: 30%;
-        left: 100px;
+        left: -200px;
         z-index: 0;
-        animation-duration: 220s;
+        animation-duration: 820s;
         animation-name: goRight;
         animation-iteration-count: infinite;
-        opacity: .7;
+        opacity: .3;
       }
       
       @keyframes goRight {
@@ -153,7 +161,7 @@ html {
         top: 20%;
         left: -500px;
         z-index: 0;
-        animation-duration: 300s;
+        animation-duration: 1000s;
         animation-name: goLeft;
         animation-iteration-count: infinite;
         opacity: .3;
@@ -174,10 +182,10 @@ html {
         top: 40%;
         left: -200px;
         z-index: 1;
-        animation-duration: 200s;
+        animation-duration: 600s;
         animation-name: goLeft2;
         animation-iteration-count: infinite;
-        opacity: .7;
+        opacity: .5;
      }
       
       @keyframes goLeft2 {
@@ -195,7 +203,7 @@ html {
         top: 50%;
         left: 500px;
         z-index: 2;
-        animation-duration: 200s;
+        animation-duration: 750s;
         animation-name: goRight2;
         animation-iteration-count: infinite;
         opacity: .3;
@@ -242,13 +250,13 @@ html {
 
     .window {
 
-        width: 80%;
-        height: 80vh;
+        width: 70%;
+        height: 70vh;
         position: absolute;
         border-radius: 12px;
         overflow: hidden;
-        top: 10vh;
-        left: 10%;
+        top: 30vh;
+        left: 30%;
         // z-index: -5;
         transform: scale(2);
         opacity: 0;
@@ -293,6 +301,8 @@ html {
                     border-radius: 50%;
                     transition: .2s ease-in-out;
                     opacity: .8;
+                    font-size: 8px;
+                    font-weight: bolder;
 
                     &:hover {
 
@@ -306,19 +316,32 @@ html {
                 .close {
 
                     background-color: #fe5d55;
-
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    align-content: space-around;
+                    justify-content: space-around;
                 }
 
                 .minimize {
 
                     background-color: #febc2f;
-
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    align-content: space-around;
+                    justify-content: space-around;
                 }
 
                 .maximize {
 
                     background-color: #25c03c;
-
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    align-content: space-around;
+                    justify-content: space-around;
+                   
                 }
 
             }
@@ -458,7 +481,7 @@ html {
             border: 1px solid transparent;
             transition: .2s ease-in-out;
             backdrop-filter: blur(0px);
-            z-index: 2000;
+            z-index: 0;
 
             &:hover {
 
@@ -484,7 +507,7 @@ html {
 
             img {
 
-                width: 70px;
+                width: 60px;
 
             }
 
