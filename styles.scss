@@ -99,6 +99,7 @@ html {
         color: white;
         text-align: center;
         font-weight: 100;
+        font-family: 'Stardew Valley', sans-serif;
 
     }
 
@@ -138,7 +139,7 @@ html {
     .cloud1 {
         position: absolute;
         top: 30%;
-        left: -200px;
+        left: 200px;
         z-index: 0;
         animation-duration: 820s;
         animation-name: goRight;
@@ -182,10 +183,10 @@ html {
         top: 40%;
         left: -200px;
         z-index: 1;
-        animation-duration: 600s;
+        animation-duration: 500s;
         animation-name: goLeft2;
         animation-iteration-count: infinite;
-        opacity: .5;
+        opacity: .3;
      }
       
       @keyframes goLeft2 {
@@ -250,13 +251,13 @@ html {
 
     .window {
 
-        width: 70%;
-        height: 70vh;
+        width: 80%;
+        height: 80vh;
         position: absolute;
         border-radius: 12px;
         overflow: hidden;
-        top: 30vh;
-        left: 30%;
+        top: 10vh;
+        left: 10%;
         // z-index: -5;
         transform: scale(2);
         opacity: 0;
@@ -270,7 +271,6 @@ html {
             background-color: #171717a4;
             backdrop-filter: blur(12px);
             display: flex;
-
             padding-inline: 12px;
             justify-content:flex-end;
             align-items: center;
@@ -301,7 +301,7 @@ html {
                     border-radius: 50%;
                     transition: .2s ease-in-out;
                     opacity: .8;
-                    font-size: 8px;
+                    font-size: 10px;
                     font-weight: bolder;
 
                     &:hover {
@@ -319,8 +319,8 @@ html {
                     display: flex;
                     flex-direction: column;
                     flex-wrap: wrap;
-                    align-content: space-around;
-                    justify-content: space-around;
+                    align-content: space-evenly;
+                    justify-content: space-evenly;
                 }
 
                 .minimize {
@@ -329,8 +329,8 @@ html {
                     display: flex;
                     flex-direction: column;
                     flex-wrap: wrap;
-                    align-content: space-around;
-                    justify-content: space-around;
+                    align-content: space-evenly;
+                    justify-content: space-evenly;
                 }
 
                 .maximize {
@@ -339,8 +339,8 @@ html {
                     display: flex;
                     flex-direction: column;
                     flex-wrap: wrap;
-                    align-content: space-around;
-                    justify-content: space-around;
+                    align-content: space-evenly;
+                    justify-content: space-evenly;
                    
                 }
 

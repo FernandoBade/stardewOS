@@ -71,9 +71,9 @@
 
             <header class="window-header" id="wikiHeader">
                 <section class="buttons">
-                    <span class="maximize">&#8722;</span>
-                    <span class="minimize" onclick="maximizeHandler('wiki')">&#9711;</span>
-                    <span class="close" onclick="windowHandler('wiki')">X</span>
+                    <span class="maximize">‒</span>
+                    <span class="minimize" onclick="maximizeHandler('wiki')">〇</span>
+                    <span class="close" onclick="windowHandler('wiki')">✕</span>
                 </section>
                 <span class="window-name">Stardew Valley Wiki</span>
             </header>
@@ -84,9 +84,9 @@
 
             <header class="window-header" id="browserHeader">
                 <section class="buttons">
-                    <span class="maximize"></span>
-                    <span class="minimize" onclick="maximizeHandler('browser')"></span>
-                    <span class="close" onclick="windowHandler('browser')"></span>
+                    <span class="maximize">‒</span>
+                    <span class="minimize" onclick="maximizeHandler('browser')">〇</span>
+                    <span class="close" onclick="windowHandler('browser')">✕</span>
                 </section>
                 <span class="window-name">Browser</span>
             </header>
@@ -98,30 +98,15 @@
 
             <header class="window-header" id="mapHeader">
                 <section class="buttons">
-                    <span class="maximize"></span>
-                    <span class="minimize" onclick="maximizeHandler('map')"></span>
-                    <span class="close" onclick="windowHandler('map')"></span>
+                    <span class="maximize">‒</span>
+                    <span class="minimize" onclick="maximizeHandler('map')">〇</span>
+                    <span class="close" onclick="windowHandler('map')">✕</span>
                 </section>
                 <span class="window-name">Stardew Valley Map Planner</span>
             </header>
             <iframe src="https://stardew.info/planner/" loading="lazy"></iframe>
 
         </section>
-
-        <section class="window hidded" id="code">
-
-            <header class="window-header" id="codeHeader">
-                <section class="buttons">
-                    <span class="close" onclick="windowHandler('code')"></span>
-                    <span class="minimize" onclick="maximizeHandler('code')"></span>
-                    <span class="maximize"></span>
-                </section>
-                <span class="window-name">Code</span>
-            </header>
-            <iframe src="https://github.com/FernandoBade/stardewOS" id="stackBlitz" loading="lazy"></iframe>
-
-        </section>
-
 
         <section id="play" class="current-date">
 
@@ -220,7 +205,7 @@
         </section>
     </footer>
 
-    <script src="./main.js"></script>
+    <script src="scripts/main.js"></script>
 
 </body>
 

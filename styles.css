@@ -125,6 +125,7 @@ html {
   color: white;
   text-align: center;
   font-weight: 100;
+  font-family: 'Stardew Valley', sans-serif;
 }
 
 .booting div {
@@ -170,7 +171,7 @@ html {
 .desktop .cloud1 {
   position: absolute;
   top: 30%;
-  left: -200px;
+  left: 200px;
   z-index: 0;
   -webkit-animation-duration: 820s;
           animation-duration: 820s;
@@ -244,13 +245,13 @@ html {
   top: 40%;
   left: -200px;
   z-index: 1;
-  -webkit-animation-duration: 600s;
-          animation-duration: 600s;
+  -webkit-animation-duration: 500s;
+          animation-duration: 500s;
   -webkit-animation-name: goLeft2;
           animation-name: goLeft2;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  opacity: .5;
+  opacity: .3;
 }
 
 @-webkit-keyframes goLeft2 {
@@ -336,13 +337,13 @@ html {
 }
 
 .desktop .window {
-  width: 70%;
-  height: 70vh;
+  width: 80%;
+  height: 80vh;
   position: absolute;
   border-radius: 12px;
   overflow: hidden;
-  top: 30vh;
-  left: 30%;
+  top: 10vh;
+  left: 10%;
   -webkit-transform: scale(2);
           transform: scale(2);
   opacity: 0;
@@ -398,7 +399,7 @@ html {
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   opacity: .8;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: bolder;
 }
 
@@ -418,10 +419,11 @@ html {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .desktop .window .window-header .buttons .minimize {
@@ -435,10 +437,11 @@ html {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .desktop .window .window-header .buttons .maximize {
@@ -452,10 +455,11 @@ html {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .desktop .window iframe {
