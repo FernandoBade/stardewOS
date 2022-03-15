@@ -12,7 +12,9 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Stardew Valley';
+  font-weight: 100;
+  letter-spacing: 1px;
 }
 
 html {
@@ -153,12 +155,12 @@ html {
   width: 100%;
   height: 100vh;
   background-color: #323232;
-  background-image: url("img/bg-2.jpg");
+  background-image: url("img/bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
-  padding: 40px 15px;
+  padding: 25px 20px;
   overflow: hidden;
   z-index: -1000;
 }
@@ -322,7 +324,7 @@ html {
 .desktop .window.opened {
   width: 80%;
   height: 80vh;
-  top: 5vh;
+  top: 10vh;
   left: 10%;
   opacity: 1;
   z-index: 5 !important;
@@ -344,6 +346,7 @@ html {
   overflow: hidden;
   top: 10vh;
   left: 10%;
+  z-index: 0;
   -webkit-transform: scale(2);
           transform: scale(2);
   opacity: 0;
@@ -358,7 +361,7 @@ html {
 .desktop .window .window-header {
   width: 100%;
   height: 42px;
-  background-color: #171717a4;
+  background-color: #171717e8;
   -webkit-backdrop-filter: blur(12px);
           backdrop-filter: blur(12px);
   display: -webkit-box;
@@ -377,18 +380,19 @@ html {
 .desktop .window .window-header .window-name {
   color: white;
   font-weight: 300;
-  letter-spacing: 2px;
   text-align: center;
   width: 60%;
   position: absolute;
   left: 20%;
+  font-weight: lighter;
+  font-size: 20px;
 }
 
 .desktop .window .window-header .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 12px;
+  gap: 10px;
 }
 
 .desktop .window .window-header .buttons span {
@@ -426,24 +430,6 @@ html {
           justify-content: space-evenly;
 }
 
-.desktop .window .window-header .buttons .minimize {
-  background-color: #febc2f;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: space-evenly;
-      align-content: space-evenly;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
 .desktop .window .window-header .buttons .maximize {
   background-color: #25c03c;
   display: -webkit-box;
@@ -462,10 +448,16 @@ html {
           justify-content: space-evenly;
 }
 
+.desktop .window .window-header .buttons img {
+  width: 20px;
+  height: 20px;
+}
+
 .desktop .window iframe {
   width: 100%;
   height: 100%;
   border: 0;
+  padding: 0 12px 0 12px;
 }
 
 .desktop .window .window-content {
@@ -590,7 +582,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 25px;
+  gap: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -629,8 +621,8 @@ html {
 .desktop .icons .icon:hover {
   background-color: #aaaaaa30;
   cursor: pointer;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
   -webkit-backdrop-filter: blur(12px);
           backdrop-filter: blur(12px);
 }
@@ -650,9 +642,10 @@ html {
 }
 
 .desktop .icons .icon h1 {
-  color: white;
-  font-size: 12px;
-  font-weight: 300;
+  color: #ffffffbb;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: lighter;
 }
 
 footer {
@@ -660,7 +653,7 @@ footer {
   position: absolute;
   left: 0;
   bottom: 50px;
-  z-index: 10;
+  z-index: 0;
 }
 
 footer .icon-wrapper {

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 
+    
     <title>stardewOS</title>
 </head>
 
@@ -71,9 +72,12 @@
 
             <header class="window-header" id="wikiHeader">
                 <section class="buttons">
-                    <span class="maximize">‒</span>
-                    <span class="minimize" onclick="maximizeHandler('wiki')">〇</span>
-                    <span class="close" onclick="windowHandler('wiki')">✕</span>
+                    <span class="minimize" onclick="maximizeHandler('wiki')">
+                        <img src="img/maximize.png" alt="">
+                    </span>
+                    <span class="close" onclick="windowHandler('wiki')">
+                        <img src="img/close.png">
+                    </span>
                 </section>
                 <span class="window-name">Stardew Valley Wiki</span>
             </header>
@@ -84,9 +88,12 @@
 
             <header class="window-header" id="browserHeader">
                 <section class="buttons">
-                    <span class="maximize">‒</span>
-                    <span class="minimize" onclick="maximizeHandler('browser')">〇</span>
-                    <span class="close" onclick="windowHandler('browser')">✕</span>
+                    <span class="minimize" onclick="maximizeHandler('browser')">
+                        <img src="img/maximize.png" alt="">
+                    </span>
+                    <span class="close" onclick="windowHandler('browser')">
+                        <img src="img/close.png">
+                    </span>
                 </section>
                 <span class="window-name">Browser</span>
             </header>
@@ -98,9 +105,12 @@
 
             <header class="window-header" id="mapHeader">
                 <section class="buttons">
-                    <span class="maximize">‒</span>
-                    <span class="minimize" onclick="maximizeHandler('map')">〇</span>
-                    <span class="close" onclick="windowHandler('map')">✕</span>
+                    <span class="minimize" onclick="maximizeHandler('map')">
+                        <img src="img/maximize.png" alt="">
+                    </span>
+                    <span class="close" onclick="windowHandler('map')">
+                        <img src="img/close.png">
+                    </span>
                 </section>
                 <span class="window-name">Stardew Valley Map Planner</span>
             </header>
@@ -119,88 +129,64 @@
             </span>
         </section>
         <section class="subicon">
-        <ul class="icons">
+            <ul class="icons">
+
+                <li class="icon">
+                    <img src="img/house.png">
+                    <h1>computer</h1>
+                </li>
+                <li class="icon">
+                    <img src="img/house.png">
+                    <h1>Stardew Wiki</h1>
+                </li>
+                <li class="icon">
+                    <img src="img/house.png">
+                    <h1>Stardew Wiki</h1>
+                </li>
+                <li class="icon">
+                    <img src="img/house.png">
+                    <h1>Stardew Wiki</h1>
+                </li>
+                <li class="icon">
+                    <img src="img/house.png">
+                    <h1>Stardew Wiki</h1>
+                </li>
+
+            </ul>
+            <ul class="icons">
 
 
-            <li class="icon" onclick="windowHandler('wiki')">
-                <img src="img/house.png">
-                <h1>Stardew Wiki</h1>
-            </li>
-
-            <li class="icon" onclick="windowHandler('map')">
-                <img src="img/Robin.png">
-                <h1>Map Planner</h1>
-
-            </li>
-
-            <li class="icon" onclick="windowHandler('browser')">
-                <img src="img/Abigail.png">
-        
-                <h1>Browser</h1>
-
-            </li>
-
-            <li class="icon" onclick="windowHandler('folder')">
-                <img src="img/joja.png">
-                <h1>Recycle Bin</h1>
-            </li>
-            <li class="icon" onclick="windowHandler('folder')">
-                <img src="img/joja.png">
-                <h1>Recycle Bin</h1>
-            </li>
-            <li class="icon" onclick="windowHandler('folder')">
-                <img src="img/joja.png">
-                <h1>Recycle Bin</h1>
-            </li>
-        </ul>
-        <ul class="icons">
-
-
-            <li class="icon" onclick="windowHandler('wiki')">
-                <img src="img/house.png">
-                <h1>Stardew Wiki</h1>
-            </li>
-
-            <li class="icon" onclick="windowHandler('map')">
-                <img src="img/Robin.png">
-                <h1>Map Planner</h1>
-
-            </li>
-
-            <li class="icon" onclick="windowHandler('browser')">
-                <img src="img/Abigail.png">
-        
-                <h1>Browser</h1>
-
-            </li>
-            <li class="icon" onclick="windowHandler('browser')">
-                <img src="img/Abigail.png">
-        
-                <h1>Browser</h1>
-
-            </li>
-            <li class="icon" onclick="windowHandler('browser')">
-                <img src="img/Abigail.png">
-        
-                <h1>Browser</h1>
-
-            </li>
-
-            <li class="icon" onclick="windowHandler('folder')">
-                <img src="img/joja.png">
-                <h1>Recycle Bin</h1>
-            </li>
-        </ul>
-</section>
+                <li class="icon">
+                    <img src="img/house.png">
+                    <h1>Stardew Wiki</h1>
+                </li>
+                <li class="icon">
+                    <img src="img/house.png">
+                    <h1>Stardew Wiki</h1>
+                </li>
+                <li class="icon">
+                    <img src="img/house.png">
+                    <h1>Stardew Wiki</h1>
+                </li>
+                <li class="icon">
+                    <img src="img/house.png">
+                    <h1>Stardew Wiki</h1>
+                </li>
+                <li class="icon">
+                    <img src="img/house.png">
+                    <h1>Stardew Wiki</h1>
+                </li>
+            </ul>
+        </section>
     </main>
 
     <footer>
         <section class="icon-wrapper">
             <h4>Tools:</h4>
-            <img src="img/m1.png" onclick="windowHandler('map')">
             <img src="img/m2.png" onclick="windowHandler('wiki')">
             <img src="img/m3.png" onclick="windowHandler('browser')">
-            <img src="img/m4.png" >
+            <img src="img/m1.png" onclick="windowHandler('map')">
+            <img src="img/m4.png">
 
 
         </section>

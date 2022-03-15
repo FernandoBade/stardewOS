@@ -13,8 +13,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-
+    font-family: 'Stardew Valley';
+    font-weight: 100;
+    letter-spacing: 1px;
+       
 }
 
 html {
@@ -122,12 +124,12 @@ html {
     width: 100%;
     height: 100vh;
     background-color: rgb(50, 50, 50);
-    background-image: url('img/bg-2.jpg');
+    background-image: url('img/bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: overlay;
-    padding: 40px 15px;
+    padding: 25px 20px;
     overflow: hidden;
     z-index: -1000;
 
@@ -238,7 +240,7 @@ html {
 
         width: 80%;
         height: 80vh;
-        top: 5vh;
+        top: 10vh;
         left: 10%;
         opacity: 1;
         z-index: 5 !important;
@@ -262,7 +264,7 @@ html {
         overflow: hidden;
         top: 10vh;
         left: 10%;
-        // z-index: -5;
+        z-index: 0;
         transform: scale(2);
         opacity: 0;
         filter: blur(32px);
@@ -272,7 +274,7 @@ html {
 
             width: 100%;
             height: 42px;
-            background-color: #171717a4;
+            background-color: #171717e8;
             backdrop-filter: blur(12px);
             display: flex;
             padding-inline: 12px;
@@ -284,18 +286,18 @@ html {
 
                 color: white;
                 font-weight: 300;
-                letter-spacing: 2px;
                 text-align: center;
                 width: 60%;
                 position: absolute;
                 left: 20%;
-
+                font-weight: lighter;
+                font-size: 20px;
             }
 
             .buttons {
 
                 display: flex;
-                gap: 12px;
+                gap: 10px;
 
                 span {
 
@@ -327,16 +329,6 @@ html {
                     justify-content: space-evenly;
                 }
 
-                .minimize {
-
-                    background-color: #febc2f;
-                    display: flex;
-                    flex-direction: column;
-                    flex-wrap: wrap;
-                    align-content: space-evenly;
-                    justify-content: space-evenly;
-                }
-
                 .maximize {
 
                     background-color: #25c03c;
@@ -348,6 +340,11 @@ html {
                    
                 }
 
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+
             }
 
         }
@@ -357,7 +354,10 @@ html {
             width: 100%;
             height: 100%;
             border: 0;
+            padding: 0 12px 0 12px;
+                
 
+            
         }
 
         .window-content {
@@ -468,7 +468,7 @@ html {
     .icons {
 
         display: flex;
-        gap:25px;
+        gap:20px;
         flex-direction: column;
 
         .icon {
@@ -491,7 +491,7 @@ html {
 
                 background-color: #aaaaaa30;
                 cursor: pointer;
-                transform: scale(1.05);
+                transform: scale(1.15);
                 backdrop-filter: blur(12px);
 
                 * {
@@ -516,9 +516,10 @@ html {
             }
 
             h1 {
-                color: white;
-                font-size: 12px;
-                font-weight: 300;
+                color: #ffffffbb;
+                font-size: 20px;
+                letter-spacing: 1px;
+                font-weight: lighter;
 
             }
 
@@ -534,7 +535,7 @@ footer {
     position: absolute;
     left: 0;
     bottom: 50px;
-    z-index: 10;
+    z-index: 0;
 
     .icon-wrapper {
         width: fit-content;
