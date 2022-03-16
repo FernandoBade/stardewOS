@@ -173,7 +173,6 @@ html {
         animation-iteration-count: infinite;
         opacity: .3;
 
-
       }
       
       @keyframes goLeft {
@@ -240,10 +239,10 @@ html {
 
     .window.opened {
 
-        width: 70%;
+        width: 60%;
         height: 70vh;
-        top: 8vh;
-        left: 15%;
+        top: 6vh;
+        left: 20%;
         opacity: 1;
         z-index: 5 !important;
         transform: scale(1);
@@ -259,13 +258,13 @@ html {
 
     .window {
 
-        width: 70%;
+        width: 60%;
         height: 70vh;
+        top: 6vh;
+        left: 20%;
         position: absolute;
         border-radius: 12px;
         overflow: hidden;
-        top: 8vh;
-        left: 15%;
         z-index: 0;
         transform: scale(2);
         opacity: 0;
@@ -289,9 +288,9 @@ html {
                 color: white;
                 font-weight: 300;
                 text-align: center;
-                width: 60%;
+                width: 50%;
                 position: absolute;
-                left: 20%;
+                left: 25%;
                 font-weight: lighter;
                 font-size: 20px;
             }
@@ -356,9 +355,9 @@ html {
             width: 100%;
             height: 100%;
             border: 0;
-            padding: 0 12px 0 12px;
             cursor: url('img/coursor.png'), auto;
-
+            padding: 0 12px 0 12px;
+            background: #303030;
             
         }
 
@@ -375,16 +374,66 @@ html {
                 top: 10px;
                 left: 20px;
             }
+            aside {
 
+                width: 300px;
+                height: 100%;
+                background-color: rgba(70, 70, 70, .90);
+                box-shadow: 7px 0px 18px -1px rgba(0,0,0,0.5);
+                p {
+                    color: white;
+                    margin: 5px;
+                    line-height: 1.5rem;
+                    font-size: 12px;
+                    letter-spacing: 2px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    opacity: .9;
+                    transition: .3s ease-in-out;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 5px;
+                    padding-left: 5px;
+                    
+                    &:hover {
+                    opacity: 1;
+                    background-color: #50505090 ;
+                    padding-left: 10px;
+                    border-radius: 4px;
+                    }
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                }
+
+            .user {
+                display: block;
+                text-align: center;
+                padding: 20px;
+                img {
+                    width: 100%;
+                }
+                h1 {
+                    color: white;
+                    padding: 10px;
+                }
+            }
+        }
             main {
 
                 width: 100%;
                 height: 100%;
                 background-color: #303030;
-                padding: 32px;
+                // padding: 32px;
                 display: flex;
                 justify-content: left;
                 align-items: flex-start;
+                padding: 0 12px 0 12px;
+                background: #303030;
 
                 h1 {
                     color: #fefefe;
@@ -493,7 +542,7 @@ html {
 
                 background-color: #50505050;
                 // cursor: pointer;
-                transform: scale(1.25);
+                transform: scale(1.1);
                 backdrop-filter: blur(4px);
 
                 h1 {
@@ -517,7 +566,7 @@ html {
 
             img {
 
-                width: 60px;
+                width: 50px;
 
             }
 
@@ -541,7 +590,7 @@ footer {
     position: absolute;
     left: 0;
     bottom: 50px;
-    z-index: 0;
+    z-index: 10;
 
     .icon-wrapper {
         width: fit-content;

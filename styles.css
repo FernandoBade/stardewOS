@@ -323,10 +323,10 @@ html {
 }
 
 .desktop .window.opened {
-  width: 70%;
+  width: 60%;
   height: 70vh;
-  top: 8vh;
-  left: 15%;
+  top: 6vh;
+  left: 20%;
   opacity: 1;
   z-index: 5 !important;
   -webkit-transform: scale(1);
@@ -340,13 +340,13 @@ html {
 }
 
 .desktop .window {
-  width: 70%;
+  width: 60%;
   height: 70vh;
+  top: 6vh;
+  left: 20%;
   position: absolute;
   border-radius: 12px;
   overflow: hidden;
-  top: 8vh;
-  left: 15%;
   z-index: 0;
   -webkit-transform: scale(2);
           transform: scale(2);
@@ -382,9 +382,9 @@ html {
   color: white;
   font-weight: 300;
   text-align: center;
-  width: 60%;
+  width: 50%;
   position: absolute;
-  left: 20%;
+  left: 25%;
   font-weight: lighter;
   font-size: 20px;
 }
@@ -457,8 +457,9 @@ html {
   width: 100%;
   height: 100%;
   border: 0;
-  padding: 0 12px 0 12px;
   cursor: url("img/coursor.png"), auto;
+  padding: 0 12px 0 12px;
+  background: #303030;
 }
 
 .desktop .window .window-content {
@@ -483,11 +484,72 @@ html {
   left: 20px;
 }
 
+.desktop .window .window-content aside {
+  width: 300px;
+  height: 100%;
+  background-color: rgba(70, 70, 70, 0.9);
+  -webkit-box-shadow: 7px 0px 18px -1px rgba(0, 0, 0, 0.5);
+          box-shadow: 7px 0px 18px -1px rgba(0, 0, 0, 0.5);
+}
+
+.desktop .window .window-content aside p {
+  color: white;
+  margin: 5px;
+  line-height: 1.5rem;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: .9;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  padding-left: 5px;
+}
+
+.desktop .window .window-content aside p:hover {
+  opacity: 1;
+  background-color: #50505090;
+  padding-left: 10px;
+  border-radius: 4px;
+}
+
+.desktop .window .window-content aside p img {
+  width: 20px;
+  height: 20px;
+}
+
+.desktop .window .window-content aside .user {
+  display: block;
+  text-align: center;
+  padding: 20px;
+}
+
+.desktop .window .window-content aside .user img {
+  width: 100%;
+}
+
+.desktop .window .window-content aside .user h1 {
+  color: white;
+  padding: 10px;
+}
+
 .desktop .window .window-content main {
   width: 100%;
   height: 100%;
   background-color: #303030;
-  padding: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -497,6 +559,8 @@ html {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding: 0 12px 0 12px;
+  background: #303030;
 }
 
 .desktop .window .window-content main h1 {
@@ -617,8 +681,8 @@ html {
 
 .desktop .icons .icon:hover {
   background-color: #50505050;
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
 }
@@ -639,7 +703,7 @@ html {
 }
 
 .desktop .icons .icon img {
-  width: 60px;
+  width: 50px;
 }
 
 .desktop .icons .icon h1 {
@@ -654,7 +718,7 @@ footer {
   position: absolute;
   left: 0;
   bottom: 50px;
-  z-index: 0;
+  z-index: 10;
 }
 
 footer .icon-wrapper {

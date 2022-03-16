@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 
-    
+
     <title>stardewOS</title>
 </head>
 
@@ -29,15 +29,91 @@
         <img src="img/cloud2.png" class="cloud2">
         <img src="img/cloud3.png" class="cloud3">
         <!-- <img src="img/cloud3.png" class="cloud4"> -->
+        
+        <section class="window" id="computer">
+
+            <header class="window-header" id="computerHeader">
+                <section class="buttons">
+                    <span class="minimize" onclick="maximizeHandler('computer')">
+                        <img src="img/maximize.png" alt="">
+                    </span>
+                    <span class="close" onclick="windowHandler('computer')">
+                        <img src="img/close.png">
+                    </span>
+                </section>
+                <span class="window-name">Robin's PC</span>
+            </header>
+
+            <section class="window-content computer">
+
+                <aside>
+                    <div class="user">
+                        <img src="img/user.png">
+                    </div>
+                    <div>
+                    <p>
+                        <img src="img/star.png">
+                        favorites
+                    </p>
+                    <p>
+                        <img src="img/dwarf.png">
+                        C:/system
+                    </p>
+                    <p>
+                        <img src="img/pc.png">
+                        computer
+                    </p>
+                    <p>
+                        <img src="img/folder.png">
+                        documents
+                    </p>
+                    <p>
+                        <img src="img/files.png">
+                        files
+                    </p>
+
+                    <p>
+                        <img src="img/trash.png">
+                        trash
+                    </p>
+                    </div>
+                </aside>
+
+                <main>
+
+                    <ul class="icons">
+
+                        <li class="icon">
+                            <img src="img/cyberpunk-icon.png">
+                            <h1>Cyberpunk</h1>
+                        </li>
+
+                        <li class="icon">
+                            <img src="img/bf4-icon.png">
+                            <h1>Battlefield</h1>
+                        </li>
+
+                    </ul>
+
+                </main>
+
+            </section>
+
+        </section>
+
+        
         <section class="window" id="folder">
 
             <header class="window-header" id="folderHeader">
                 <section class="buttons">
-                    <span class="maximize"></span>
-                    <span class="minimize" onclick="maximizeHandler('folder')"></span>
-                    <span class="close" onclick="windowHandler('folder')"></span>
+                    <span class="minimize" onclick="maximizeHandler('folder')">
+                        <img src="img/maximize.png" alt="">
+                    </span>
+                    <span class="close" onclick="windowHandler('folder')">
+                        <img src="img/close.png">
+                    </span>
                 </section>
-                <span class="window-name">Deleted Items</span>
+                <span class="window-name">Robin's PC</span>
             </header>
 
             <section class="window-content folder">
@@ -57,7 +133,7 @@
 
                         <li class="icon">
                             <img src="img/bf4-icon.png">
-                            <h1>Battlefield 4</h1>
+                            <h1>Battlefield</h1>
                         </li>
 
                     </ul>
@@ -67,7 +143,7 @@
             </section>
 
         </section>
-
+       
         <section class="window hidded" id="wiki">
 
             <header class="window-header" id="wikiHeader">
@@ -132,7 +208,7 @@
             <ul class="icons">
 
                 <li class="icon">
-                    <img src="img/pc.png">
+                    <img src="img/pc.png" onclick="windowHandler('computer')">
                     <h1>computer</h1>
                 </li>
                 <li class="icon">
@@ -144,7 +220,7 @@
                     <h1>files</h1>
                 </li>
                 <li class="icon">
-                    <img src="img/trash.png">
+                    <img src="img/trash.png" onclick="windowHandler('folder')">
                     <h1>trash</h1>
                 </li>
                 <li class="icon">
