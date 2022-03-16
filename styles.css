@@ -15,6 +15,7 @@
   font-family: 'Stardew Valley';
   font-weight: 100;
   letter-spacing: 1px;
+  cursor: url("img/coursor.png"), auto;
 }
 
 html {
@@ -322,10 +323,10 @@ html {
 }
 
 .desktop .window.opened {
-  width: 80%;
-  height: 80vh;
-  top: 10vh;
-  left: 10%;
+  width: 70%;
+  height: 70vh;
+  top: 8vh;
+  left: 15%;
   opacity: 1;
   z-index: 5 !important;
   -webkit-transform: scale(1);
@@ -339,13 +340,13 @@ html {
 }
 
 .desktop .window {
-  width: 80%;
-  height: 80vh;
+  width: 70%;
+  height: 70vh;
   position: absolute;
   border-radius: 12px;
   overflow: hidden;
-  top: 10vh;
-  left: 10%;
+  top: 8vh;
+  left: 15%;
   z-index: 0;
   -webkit-transform: scale(2);
           transform: scale(2);
@@ -409,7 +410,6 @@ html {
 
 .desktop .window .window-header .buttons span:hover {
   opacity: 1;
-  cursor: pointer;
 }
 
 .desktop .window .window-header .buttons .close {
@@ -458,6 +458,7 @@ html {
   height: 100%;
   border: 0;
   padding: 0 12px 0 12px;
+  cursor: url("img/coursor.png"), auto;
 }
 
 .desktop .window .window-content {
@@ -535,10 +536,6 @@ html {
 .desktop .current-date * {
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
-}
-
-.desktop .current-date:hover {
-  cursor: default;
 }
 
 .desktop .current-date:hover .time, .desktop .current-date:hover .date, .desktop .current-date:hover .current-date {
@@ -619,12 +616,16 @@ html {
 }
 
 .desktop .icons .icon:hover {
-  background-color: #aaaaaa30;
-  cursor: pointer;
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-  -webkit-backdrop-filter: blur(12px);
-          backdrop-filter: blur(12px);
+  background-color: #50505050;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+
+.desktop .icons .icon:hover h1 {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .desktop .icons .icon:hover * {
@@ -645,7 +646,7 @@ html {
   color: #ffffffbb;
   font-size: 20px;
   letter-spacing: 1px;
-  font-weight: lighter;
+  font-weight: 100;
 }
 
 footer {
@@ -678,14 +679,12 @@ footer .icon-wrapper {
   padding: 2px 10px 2px 10px;
   gap: 10px;
   color: rgba(255, 255, 255, 0.5);
-  cursor: url("img/coursor.png"), auto;
 }
 
 footer .icon-wrapper:hover {
   background-color: #ffffff30;
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
-  cursor: url("img/coursor.png"), auto;
 }
 
 footer .icon-wrapper img {
@@ -693,16 +692,13 @@ footer .icon-wrapper img {
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   opacity: 1;
-  cursor: url("img/coursor.png"), auto;
 }
 
 footer .icon-wrapper img:hover {
   height: 100px;
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
-  cursor: pointer;
   opacity: 1;
-  cursor: url("img/coursor.png"), auto;
 }
 
 footer h4 {
