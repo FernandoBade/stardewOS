@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <title>stardewOS</title>
 </head>
@@ -29,7 +29,7 @@
         <img src="img/cloud2.png" class="cloud2">
         <img src="img/cloud3.png" class="cloud3">
         <!-- <img src="img/cloud3.png" class="cloud4"> -->
-        
+
         <section class="window" id="computer">
 
             <header class="window-header" id="computerHeader">
@@ -50,32 +50,33 @@
                     <div class="user">
                         <img src="img/user.png">
                     </div>
-                    <div>
-                    <p>
-                        <img src="img/star.png">
-                        favorites
-                    </p>
-                    <p>
-                        <img src="img/dwarf.png">
-                        C:/system
-                    </p>
-                    <p>
-                        <img src="img/pc.png">
-                        computer
-                    </p>
-                    <p>
-                        <img src="img/folder.png">
-                        documents
-                    </p>
-                    <p>
-                        <img src="img/files.png">
-                        files
-                    </p>
 
-                    <p>
-                        <img src="img/trash.png">
-                        trash
-                    </p>
+                    <div>
+                        <p>
+                            <img src="img/star.png">
+                            favorites
+                        </p>
+                        <p>
+                            <img src="img/dwarf.png">
+                            C:/system
+                        </p>
+                        <p>
+                            <img src="img/pc.png">
+                            computer
+                        </p>
+                        <p>
+                            <img src="img/folder.png">
+                            documents
+                        </p>
+                        <p>
+                            <img src="img/files.png">
+                            files
+                        </p>
+
+                        <p>
+                            <img src="img/trash.png">
+                            trash
+                        </p>
                     </div>
                 </aside>
 
@@ -101,7 +102,7 @@
 
         </section>
 
-        
+
         <section class="window" id="folder">
 
             <header class="window-header" id="folderHeader">
@@ -143,7 +144,7 @@
             </section>
 
         </section>
-       
+
         <section class="window hidded" id="wiki">
 
             <header class="window-header" id="wikiHeader">
@@ -171,7 +172,7 @@
                         <img src="img/close.png">
                     </span>
                 </section>
-                <span class="window-name">Browser</span>
+                <span class="window-name">Bing</span>
             </header>
             <iframe src="https://www.bing.com/?cc=br" frameborder="0"></iframe>
 
@@ -193,10 +194,36 @@
             <iframe src="https://stardew.info/planner/" loading="lazy"></iframe>
 
         </section>
+        <section class="radioPlayer">
+            <div class="player">
+
+                <img id="backImage"
+                    src="http://findicons.com/files/icons/141/toolbar_icons_6_by_ruby_softwar/128/rewind.png"
+                    height="24" width="24">
+
+                <img id="swapImage" src="img/music-on.png">
+
+                <img id="nextImage"
+                    src="http://findicons.com/files/icons/141/toolbar_icons_6_by_ruby_softwar/128/forward.png"
+                    height="24" width="24">
+
+                <img id="stopImage"
+                    src="img/music-off.png" height="0"
+                    width="0">
+            </div>
+            <div class="playlist">
+                <div class="song" url="audio/0.mp3">
+                </div>
+                <div class="song" url="audio/1.mp3">
+                </div>
+                <div class="song" url="audio/2.mp3">
+                </div>
+            </div>
+        </section>
+
 
         <section id="play" class="current-date">
 
-            <img class="gif-date" id="chicken-gif" src="img/chicken-gif.gif">
             <span class="time">
                 <span id="currentHour"></span>:<span id="currentMinute"></span>
             </span>
@@ -206,6 +233,7 @@
         </section>
         <section class="subicon">
             <ul class="icons">
+
 
                 <li class="icon">
                     <img src="img/pc.png" onclick="windowHandler('computer')">
@@ -257,8 +285,9 @@
     </main>
 
     <footer>
+
         <section class="icon-wrapper">
-            <h4>Tools:</h4>
+            <h1>Stardew Tool's:</h1>
             <img src="img/m2.png" onclick="windowHandler('wiki')">
             <img src="img/m3.png" onclick="windowHandler('browser')">
             <img src="img/m1.png" onclick="windowHandler('map')">
@@ -269,6 +298,7 @@
     </footer>
 
     <script src="scripts/main.js"></script>
+    <script src="scripts/audioPlayer.js"></script>
 
 </body>
 

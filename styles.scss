@@ -454,6 +454,18 @@ html {
 
     }
 
+    .radioPlayer {
+        color: white;
+        position: absolute;
+        right: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 32px;
+        z-index: 100;
+    }
+
     .current-date {
 
         color: white;
@@ -636,3 +648,4 @@ footer {
     }
 
 }
+

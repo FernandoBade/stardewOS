@@ -47,7 +47,7 @@ function windowHandler(windowId) {
 
     let windowElementClassList = document.getElementById(windowId).classList
 
-    if(windowElementClassList.contains('opened')) {
+    if (windowElementClassList.contains('opened')) {
 
         windowElementClassList.remove('opened')
         windowElementClassList.remove('maximized')
@@ -87,19 +87,20 @@ function setDate() {
     let currentDay = currentDate.getDate()
     let currentMonth = currentDate.getMonth() + 1
 
-    document.getElementById('currentHour').innerHTML = currentHour.toString().length  === 1 ? `0${currentHour}` : currentHour
-    document.getElementById('currentMinute').innerHTML = currentMinute.toString().length  === 1 ? `0${currentMinute}` : currentMinute
+    document.getElementById('currentHour').innerHTML = currentHour.toString().length === 1 ? `0${currentHour}` : currentHour
+    document.getElementById('currentMinute').innerHTML = currentMinute.toString().length === 1 ? `0${currentMinute}` : currentMinute
 
-    document.getElementById('currentDay').innerHTML = currentDay.toString().length  === 1 ? `0${currentDay}` : currentDay
-    document.getElementById('currentMonth').innerHTML = currentMonth.toString().length  === 1 ? `0${currentMonth}` : currentMonth
+    document.getElementById('currentDay').innerHTML = currentDay.toString().length === 1 ? `0${currentDay}` : currentDay
+    document.getElementById('currentMonth').innerHTML = currentMonth.toString().length === 1 ? `0${currentMonth}` : currentMonth
     document.getElementById('currentYear').innerHTML = currentDate.getFullYear()
 
-    setTimeout( () => setDate(), 1000 )
+    setTimeout(() => setDate(), 1000)
 
 }
+
+
 
 
 setDate()
 
 // bootingScreen()
-
