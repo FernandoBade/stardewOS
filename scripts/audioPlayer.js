@@ -18,10 +18,10 @@ document.getElementById("backImage").onclick = function () {
 var swapImage = function () {
     var image = document.getElementById('swapImage');
     if (imageTracker == 'playImage') {
-        image.src = 'img/music-off.png';
+        image.src = 'img/song-on.gif';
         imageTracker = 'stopImage';
     } else {
-        image.src = 'img/music-on.png';
+        image.src = 'img/song1.png';
         imageTracker = 'playImage';
     }
 };
@@ -71,7 +71,7 @@ var forward = function () {
     }
     if (musicTracker == 'playMusic') {
         audios[activeTrack].pause();
-        //audios[activeTrack].currentTime = 0;
+        audios[activeTrack].currentTime = 0;
         increment();
         audios[activeTrack].play();
     } else {
@@ -88,7 +88,7 @@ var backward = function () {
     }
     if (musicTracker == 'playMusic') {
         audios[activeTrack].pause();
-        //audios[activeTrack].currentTime = 0;
+        audios[activeTrack].currentTime = 0;
         decrement();
         audios[activeTrack].play();
     } else {

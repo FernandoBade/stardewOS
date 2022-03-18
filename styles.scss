@@ -357,7 +357,7 @@ html {
             border: 0;
             cursor: url('img/coursor.png'), auto;
             padding: 0 12px 0 12px;
-            background: #303030;
+            background: #1d1d1c50;
             
         }
 
@@ -454,18 +454,6 @@ html {
 
     }
 
-    .radioPlayer {
-        color: white;
-        position: absolute;
-        right: 32px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        top: 32px;
-        z-index: 100;
-    }
-
     .current-date {
 
         color: white;
@@ -475,7 +463,7 @@ html {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        bottom: 32px;
+        bottom: 38px;
         z-index: 100;
 
         * {
@@ -503,8 +491,8 @@ html {
         .time {
 
             font-weight: 500;
-            font-size: 32px;
-            letter-spacing: 1px;
+            font-size: 46px;
+            letter-spacing: 2px;
             opacity: .6;
 
         }
@@ -512,8 +500,8 @@ html {
         .date {
 
             font-weight: 100;
-            font-size: 14px;
-            letter-spacing: 1px;
+            font-size: 18px;
+            letter-spacing: 2px;
             opacity: .4;
 
         }
@@ -526,12 +514,12 @@ html {
     .subicon {
         display: flex;
         flex-direction: row;
-        gap: 20px;
+        gap: 10px;
     }
     .icons {
 
         display: flex;
-        gap:20px;
+        gap:10px;
         flex-direction: column;
 
         .icon {
@@ -606,7 +594,7 @@ footer {
 
     .icon-wrapper {
         width: fit-content;
-        height: 60px;
+        height: 45px;
         border-radius: 12px;
         display: flex;
         justify-content: center;
@@ -614,13 +602,15 @@ footer {
         background-color: #ffffff30;
         transition: .2s ease-in-out;
         margin: 0 auto;
-        padding: 2px 10px 2px 10px;
+        padding: 15px;
         gap: 10px;
         color: rgba(255, 255, 255, 0.5);
+        
+        
         // cursor: url('img/coursor.png'), auto;
         &:hover {
             background-color: #ffffff30;
-            backdrop-filter: blur(4px);
+            backdrop-filter: blur(2px);
             // cursor: url('img/coursor.png'), auto;
         }
 
@@ -628,14 +618,44 @@ footer {
             height: 80px;
             transition: .2s ease-in-out;
             opacity: 1;
+            margin-top: 0px;
             // cursor: url('img/coursor.png'), auto;
-
+            
             &:hover {
-                height: 100px;
-                transform: translateY(-10px);
-                // cursor: pointer;
+                transform: scale(1.2) translateY(-2px);
                 opacity: 1;
-                // cursor: url('img/coursor.png'), auto;
+            }
+    
+            &#backImage {
+                width: 24px;
+                height: 24px;
+                opacity: .6;
+                &:hover {
+                    transform: scale(1.2) translateY(-2px);
+                    opacity: 1;
+                }
+            }
+            &#swapImage {
+                width: 24px;
+                height: 24px;
+                opacity: .6;
+                &:hover {
+                    transform: scale(1.2) translateY(-2px);
+                    opacity: 1;
+                }
+            }
+            &#nextImage {
+                width: 24px;
+                height: 24px;
+                opacity: .6;
+                &:hover {
+                    transform: scale(1.2) translateY(-2px);
+                    opacity: 1;
+                }
+            }
+            &#stopImage {
+                display: none;
+
             }
 
         }
@@ -643,7 +663,7 @@ footer {
     } h4 {
         font-family: 'Stardew Valley';
         font-weight: 100;
-        font-size: 25px;
+        font-size: 15px;
         color: white;
     }
 
