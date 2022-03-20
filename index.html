@@ -12,8 +12,6 @@
 </head>
 
 <body>
-    <audio id="heartbeat" src="/pika.mp3" preload="auto">
-    </audio>
 
     <!-- <section class="booting" id="bootSection">
         <div>
@@ -26,8 +24,7 @@
 
     <main class="desktop">
         <!-- <img src="img/cloud1.png" class="cloud1"> -->
-        <img src="img/cloud2.png" class="cloud2">
-        <img src="img/cloud3.png" class="cloud3">
+        <img src="img/bird.gif" class="bird">
         <!-- <img src="img/cloud3.png" class="cloud4"> -->
 
         <section class="window" id="computer">
@@ -57,8 +54,79 @@
                             favorites
                         </p>
                         <p>
+                            <img src="img/pc.png">
+                            computer
+                        </p>
+                        <p>
+                            <img src="img/folder.png">
+                            downloads
+                        </p>
+                        <p>
+                            <img src="img/files.png">
+                            documents
+                        </p>
+
+                        <p>
+                            <img src="img/trash.png">
+                            trash
+                        </p>
+                        <p>
                             <img src="img/dwarf.png">
                             C:/system
+                        </p>
+                    </div>
+                </aside>
+
+                <main class="folders">
+                    <div class="subfolder">
+                        <ul class="icons">
+
+                            <li class="icon">
+                                <img src="img/icon1.png">
+                                <h1>images</h1>
+                            </li>
+
+                            <li class="icon">
+                                <img src="img/icon1.png">
+                                <h1>games</h1>
+                            </li>
+
+                            <li class="icon">
+                                <img src="img/icon1.png">
+                                <h1>movies</h1>
+                            </li>
+                        </ul>
+                    </div>
+                </main>
+
+            </section>
+
+        </section>
+        <section class="window" id="trash">
+
+            <header class="window-header" id="computerTrash">
+                <section class="buttons">
+                    <span class="minimize" onclick="maximizeHandler('trash')">
+                        <img src="img/maximize.png" alt="">
+                    </span>
+                    <span class="close" onclick="windowHandler('trash')">
+                        <img src="img/close.png">
+                    </span>
+                </section>
+                <span class="window-name">trash</span>
+            </header>
+
+            <section class="window-content computer">
+
+                <aside>
+                    <div class="user">
+                        <img src="img/user.png">
+                    </div>
+
+                    <div>
+                        <p>
+                            <img src="img/star.png">
+                            favorites
                         </p>
                         <p>
                             <img src="img/pc.png">
@@ -66,85 +134,53 @@
                         </p>
                         <p>
                             <img src="img/folder.png">
-                            documents
+                            downloads
                         </p>
                         <p>
                             <img src="img/files.png">
-                            files
+                            documents
                         </p>
 
                         <p>
                             <img src="img/trash.png">
                             trash
                         </p>
+                        <p>
+                            <img src="img/dwarf.png">
+                            C:/system
+                        </p>
                     </div>
                 </aside>
 
-                <main>
+                <main class="folders">
+                    <div class="subfolder">
+                        <ul id="trash" class="icons">
 
-                    <ul class="icons">
+                            <li class="icon">
+                                <img src="img/t2.png">
+                                <h1>mod_list.txt</h1>
+                            </li>
 
-                        <li class="icon">
-                            <img src="img/cyberpunk-icon.png">
-                            <h1>Cyberpunk</h1>
-                        </li>
+                            <li class="icon">
+                                <img src="img/t2.png">
+                                <h1>testing.txt</h1>
+                            </li>
 
-                        <li class="icon">
-                            <img src="img/bf4-icon.png">
-                            <h1>Battlefield</h1>
-                        </li>
+                            <li class="icon">
+                                <img src="img/t1.png">
+                                <h1>bad-vibes.mp3</h1>
+                            </li>
 
-                    </ul>
-
+                            </li>
+                        </ul>
+                    </div>
                 </main>
 
             </section>
 
         </section>
 
-
-        <section class="window" id="folder">
-
-            <header class="window-header" id="folderHeader">
-                <section class="buttons">
-                    <span class="minimize" onclick="maximizeHandler('folder')">
-                        <img src="img/maximize.png" alt="">
-                    </span>
-                    <span class="close" onclick="windowHandler('folder')">
-                        <img src="img/close.png">
-                    </span>
-                </section>
-                <span class="window-name">Robin's PC</span>
-            </header>
-
-            <section class="window-content folder">
-
-                <aside>
-
-                </aside>
-
-                <main>
-
-                    <ul class="icons">
-
-                        <li class="icon">
-                            <img src="img/cyberpunk-icon.png">
-                            <h1>Cyberpunk</h1>
-                        </li>
-
-                        <li class="icon">
-                            <img src="img/bf4-icon.png">
-                            <h1>Battlefield</h1>
-                        </li>
-
-                    </ul>
-
-                </main>
-
-            </section>
-
-        </section>
-
+        
         <section class="window hidded" id="wiki">
 
             <header class="window-header" id="wikiHeader">
@@ -160,6 +196,21 @@
             </header>
             <iframe src="https://stardewvalleywiki.com/Stardew_Valley_Wiki" frameborder="0"></iframe>
 
+        </section>
+        <section class="window hidded" id="play">
+
+            <header class="window-header" id="playHeader">
+                <section class="buttons">
+                    <span class="minimize" onclick="maximizeHandler('play')">
+                        <img src="img/maximize.png" alt="">
+                    </span>
+                    <span class="close" onclick="windowHandler('play')">
+                        <img src="img/close.png">
+                    </span>
+                </section>
+                <span class="window-name"></span>
+            </header>
+            <iframe src="https://www.youtube.com/embed/ot7uXNQskhs?t=0" title="Gameplay" frameborder="0" allowfullscreen ></iframe>
         </section>
         <section class="window hidded" id="browser">
 
@@ -194,27 +245,6 @@
             <iframe src="https://stardew.info/planner/" loading="lazy"></iframe>
 
         </section>
-        <!-- <section class="radioPlayer">
-            <div class="player">
-
-                <img id="backImage" src="img/song-prev.png">
-
-                <img id="swapImage" src="img/song1.png">
-
-                <img id="nextImage" src="img/song-next.png">
-
-                <img id="stopImage" class="stopImage" src="img/music-off.png">
-            </div>
-            <div class="playlist">
-                <div class="song" url="audio/0.mp3">
-                </div>
-                <div class="song" url="audio/1.mp3">
-                </div>
-                <div class="song" url="audio/2.mp3">
-                </div>
-            </div>
-        </section> -->
-
 
         <section id="play" class="current-date">
 
@@ -230,26 +260,25 @@
 
 
                 <li class="icon">
-                    <img src="img/pc.png" onclick="windowHandler('computer')">
-                    <h1>computer</h1>
+                    <img src="img/dwarf.png" onclick="windowHandler('computer')">
+                    <h1>device</h1>
                 </li>
                 <li class="icon">
-                    <img src="img/folder.png">
-                    <h1>documents</h1>
+                    <img src="img/trash.png" onclick="windowHandler('trash')">
+                    <h1>trash</h1>
+                </li>
+                <li class="icon">
+                    <img src="img/star.png">
+                    <h1>favorites</h1>
                 </li>
                 <li class="icon">
                     <img src="img/files.png">
-                    <h1>files</h1>
-                </li>
-                <li class="icon">
-                    <img src="img/trash.png" onclick="windowHandler('folder')">
-                    <h1>trash</h1>
+                    <h1>documents</h1>
                 </li>
                 <li class="icon">
                     <img src="img/avast.png">
                     <h1>antivirus</h1>
                 </li>
-
             </ul>
             <!-- <ul class="icons">
 
@@ -308,7 +337,7 @@
             <img src="img/m2.png" onclick="windowHandler('wiki')">
             <img src="img/m3.png" onclick="windowHandler('browser')">
             <img src="img/m1.png" onclick="windowHandler('map')">
-            <img src="img/m4.png">
+            <img src="img/m4.png"onclick="windowHandler('play')">
 
 
         </section>

@@ -155,13 +155,12 @@ html {
 .desktop {
   width: 100%;
   height: 100vh;
-  background-color: #323232;
-  background-image: url("img/bg.jpg");
+  background-image: url("img/bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
-  padding: 25px 20px;
+  padding: 20px 5px;
   overflow: hidden;
   z-index: -1000;
 }
@@ -171,147 +170,41 @@ html {
   margin-bottom: 10px;
 }
 
-.desktop .cloud1 {
+.desktop .bird {
   position: absolute;
-  top: 30%;
-  left: 200px;
+  top: 70%;
+  left: 50px;
   z-index: 0;
-  -webkit-animation-duration: 820s;
-          animation-duration: 820s;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
   -webkit-animation-name: goRight;
           animation-name: goRight;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  opacity: .3;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  opacity: 1;
 }
 
 @-webkit-keyframes goRight {
   from {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  to {
     -webkit-transform: translate(1920px, 0);
             transform: translate(1920px, 0);
+  }
+  to {
+    -webkit-transform: translate(-120px, 0);
+            transform: translate(-120px, 0);
   }
 }
 
 @keyframes goRight {
   from {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  to {
-    -webkit-transform: translate(1920px, 0);
-            transform: translate(1920px, 0);
-  }
-}
-
-.desktop .cloud2 {
-  position: absolute;
-  top: 20%;
-  left: -500px;
-  z-index: 0;
-  -webkit-animation-duration: 1000s;
-          animation-duration: 1000s;
-  -webkit-animation-name: goLeft;
-          animation-name: goLeft;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  opacity: .3;
-}
-
-@-webkit-keyframes goLeft {
-  from {
     -webkit-transform: translate(1920px, 0);
             transform: translate(1920px, 0);
   }
   to {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-}
-
-@keyframes goLeft {
-  from {
-    -webkit-transform: translate(1920px, 0);
-            transform: translate(1920px, 0);
-  }
-  to {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-}
-
-.desktop .cloud3 {
-  position: absolute;
-  top: 40%;
-  left: -200px;
-  z-index: 1;
-  -webkit-animation-duration: 500s;
-          animation-duration: 500s;
-  -webkit-animation-name: goLeft2;
-          animation-name: goLeft2;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  opacity: .3;
-}
-
-@-webkit-keyframes goLeft2 {
-  from {
-    -webkit-transform: translate(1920px, 0);
-            transform: translate(1920px, 0);
-  }
-  to {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-}
-
-@keyframes goLeft2 {
-  from {
-    -webkit-transform: translate(1920px, 0);
-            transform: translate(1920px, 0);
-  }
-  to {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-}
-
-.desktop .cloud4 {
-  position: absolute;
-  top: 50%;
-  left: -1200px;
-  z-index: 2;
-  -webkit-animation-duration: 750s;
-          animation-duration: 750s;
-  -webkit-animation-name: goRight2;
-          animation-name: goRight2;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  opacity: .3;
-}
-
-@-webkit-keyframes goRight2 {
-  from {
-    -webkit-transform: translate(1920px, 0);
-            transform: translate(1920px, 0);
-  }
-  to {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-}
-
-@keyframes goRight2 {
-  from {
-    -webkit-transform: translate(1920px, 0);
-            transform: translate(1920px, 0);
-  }
-  to {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    -webkit-transform: translate(-120px, 0);
+            transform: translate(-120px, 0);
   }
 }
 
@@ -498,7 +391,7 @@ html {
   line-height: 1.5rem;
   font-size: 12px;
   letter-spacing: 2px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: monospace;
   opacity: .9;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
@@ -651,7 +544,7 @@ html {
 }
 
 .desktop .icons .icon {
-  width: 100px;
+  width: 120px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -681,15 +574,16 @@ html {
 
 .desktop .icons .icon:hover {
   background-color: #50505050;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
 }
 
 .desktop .icons .icon:hover h1 {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  opacity: 1;
 }
 
 .desktop .icons .icon:hover * {
@@ -703,14 +597,15 @@ html {
 }
 
 .desktop .icons .icon img {
-  width: 50px;
+  width: 42px;
 }
 
 .desktop .icons .icon h1 {
-  color: #ffffffbb;
+  color: #ffffff;
   font-size: 20px;
   letter-spacing: 1px;
   font-weight: 100;
+  opacity: .7;
 }
 
 footer {
@@ -810,5 +705,28 @@ footer h4 {
   font-weight: 100;
   font-size: 15px;
   color: white;
+}
+
+.subfolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+@media (max-width: 836px) {
+  .current-date * {
+    display: none;
+  }
+}
+
+.desktop .window .window-content main h1 {
+  font-family: monospace;
+  font-size: 10px;
+  letter-spacing: 1px;
 }
 /*# sourceMappingURL=styles.css.map */
