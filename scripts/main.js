@@ -73,11 +73,11 @@ function maximizeHandler(windowId) {
 
 }
 
-// function bootingScreen() {
+function bootingScreen() {
 
-//     setTimeout( () =>  document.getElementById('bootSection').classList.add('booting-finish'), 5000 )
+    setTimeout( () =>  document.getElementById('bootSection').classList.add('booting-finish'), 5000 )
 
-// }
+}
 
 function setDate() {
 
@@ -103,4 +103,4 @@ function setDate() {
 
 setDate()
 
-// bootingScreen()
+bootingScreen()

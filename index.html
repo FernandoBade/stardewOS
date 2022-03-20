@@ -13,18 +13,19 @@
 
 <body>
 
-    <!-- <section class="booting" id="bootSection">
+    <section class="booting" id="bootSection">
         <div>
             <h1>
-                <img src="img/loading-junimo.gif" alt="" srcset="" class="gif-loading"><br>
-                Loading...
+                <img src="img/loading.png" class="gif-loading"><br>
             </h1>
         </div>
-    </section> -->
+    </section>
 
     <main class="desktop">
-        <!-- <img src="img/cloud1.png" class="cloud1"> -->
-        <img src="img/bird.gif" class="bird">
+        <img src="img/stars.png" class="stars1">
+        <img src="img/stars.png" class="stars2">
+        <img src="img/bird.gif" class="bird1">
+        <img src="img/bird.gif" class="bird2">
         <!-- <img src="img/cloud3.png" class="cloud4"> -->
 
         <section class="window" id="computer">
@@ -50,13 +51,10 @@
 
                     <div>
                         <p>
-                            <img src="img/star.png">
+                            <img src="img/f1.png">
                             favorites
                         </p>
-                        <p>
-                            <img src="img/pc.png">
-                            computer
-                        </p>
+
                         <p>
                             <img src="img/folder.png">
                             downloads
@@ -178,9 +176,7 @@
 
             </section>
 
-        </section>
-
-        
+        </section>        
         <section class="window hidded" id="wiki">
 
             <header class="window-header" id="wikiHeader">
@@ -197,7 +193,7 @@
             <iframe src="https://stardewvalleywiki.com/Stardew_Valley_Wiki" frameborder="0"></iframe>
 
         </section>
-        <section class="window hidded" id="play">
+        <!-- <section class="window hidded" id="play">
 
             <header class="window-header" id="playHeader">
                 <section class="buttons">
@@ -211,7 +207,7 @@
                 <span class="window-name"></span>
             </header>
             <iframe src="https://www.youtube.com/embed/ot7uXNQskhs?t=0" title="Gameplay" frameborder="0" allowfullscreen ></iframe>
-        </section>
+        </section> -->
         <section class="window hidded" id="browser">
 
             <header class="window-header" id="browserHeader">
@@ -228,7 +224,6 @@
             <iframe src="https://www.bing.com/?cc=br" frameborder="0"></iframe>
 
         </section>
-
         <section class="window hidded" id="map">
 
             <header class="window-header" id="mapHeader">
@@ -245,7 +240,6 @@
             <iframe src="https://stardew.info/planner/" loading="lazy"></iframe>
 
         </section>
-
         <section id="play" class="current-date">
 
             <span class="time">
@@ -259,54 +253,29 @@
             <ul class="icons">
 
 
+                <!-- <li class="icon">
+                    <img src="img/pc.png" onclick="windowHandler('computer')">
+                    <h1>computer</h1>
+                </li> -->
                 <li class="icon">
-                    <img src="img/dwarf.png" onclick="windowHandler('computer')">
-                    <h1>device</h1>
+                    <img src="img/f1.png" onclick="windowHandler('computer')">
+                    <h1>favorites</h1>
                 </li>
                 <li class="icon">
                     <img src="img/trash.png" onclick="windowHandler('trash')">
                     <h1>trash</h1>
                 </li>
                 <li class="icon">
-                    <img src="img/star.png">
-                    <h1>favorites</h1>
-                </li>
-                <li class="icon">
                     <img src="img/files.png">
                     <h1>documents</h1>
                 </li>
                 <li class="icon">
-                    <img src="img/avast.png">
-                    <h1>antivirus</h1>
+                    <img src="img/settings.png">
+                    <h1>settings</h1>
                 </li>
             </ul>
-            <!-- <ul class="icons">
-
-
-                <li class="icon">
-                    <img src="img/house.png">
-                    <h1>Stardew Wiki</h1>
-                </li>
-                <li class="icon">
-                    <img src="img/house.png">
-                    <h1>Stardew Wiki</h1>
-                </li>
-                <li class="icon">
-                    <img src="img/house.png">
-                    <h1>Stardew Wiki</h1>
-                </li>
-                <li class="icon">
-                    <img src="img/house.png">
-                    <h1>Stardew Wiki</h1>
-                </li>
-                <li class="icon">
-                    <img src="img/house.png">
-                    <h1>Stardew Wiki</h1>
-                </li>
-            </ul> -->
         </section>
     </main>
-
     <footer>
 
         <section class="icon-wrapper">
@@ -337,7 +306,7 @@
             <img src="img/m2.png" onclick="windowHandler('wiki')">
             <img src="img/m3.png" onclick="windowHandler('browser')">
             <img src="img/m1.png" onclick="windowHandler('map')">
-            <img src="img/m4.png"onclick="windowHandler('play')">
+            <a href="steam://run/413150"><img src="img/m4.png"></a>
 
 
         </section>

@@ -69,7 +69,8 @@ html {
     width: 100%;
     height: 100vh;
     z-index: 11;
-    background: linear-gradient(180deg, #035eb6, #1f8b50);
+    background: #000;
+    background-position: center;
     background-size: 100% 100%;
     -webkit-animation: AnimationName 30s ease infinite;
     -moz-animation: AnimationName 30s ease infinite;
@@ -116,7 +117,9 @@ html {
     }
 
     img {
-        width: 300px;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
     }
 
 }
@@ -125,7 +128,7 @@ html {
 
     width: 100%;
     height: 100vh;
-    // background-color: rgb(50, 50, 50);
+    // background: #303030;
     background-image: url('img/bg.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -140,26 +143,93 @@ html {
         margin-bottom: 10px;
     }
 
-    .bird {
+    .bird1 {
         position: absolute;
-        top: 70%;
+        top: 65%;
         left: 50px;
         z-index: 0;
         animation-duration: 30s;
-        animation-name: goRight;
+        animation-name: goLeft;
         animation-iteration-count: infinite;
         animation-timing-function:linear;
         opacity: 1;
         
       }
       
-      @keyframes goRight {
+      @keyframes goLeft {
         from {
           transform: translate(1920px,0);
         }
       
         to {
           transform: translate(-120px,0);
+        }
+      }
+
+    .bird2 {
+        position: absolute;
+        top: 69%;
+        left: 135px;
+        z-index: 0;
+        animation-duration: 30s;
+        animation-name: goLeft;
+        animation-iteration-count: infinite;
+        animation-timing-function:linear;
+        opacity: 1;
+        
+      }
+      
+      @keyframes goLeft {
+        from {
+          transform: translate(1980px,0);
+        }
+      
+        to {
+          transform: translate(-200px,0);
+        }
+      }
+
+    .stars1 {
+        position: absolute;
+        top: 5%;
+        left: -500px;
+        z-index: 0;
+        animation-duration: 1500s;
+        animation-name: goRight2;
+        animation-iteration-count: infinite;
+        animation-timing-function:linear;
+        opacity: .2;
+      }
+      
+      @keyframes goRight2 {
+        from {
+          transform: translate(0,0);
+        }
+      
+        to {
+          transform: translate(2920px,0);
+        }
+      }
+    .stars2 {
+        position: absolute;
+        top: 15%;
+        left: 100px;
+        z-index: 0;
+        animation-duration: 900s;
+        animation-name: goRight2;
+        animation-iteration-count: infinite;
+        animation-timing-function:linear;
+        opacity: .7;
+        transform: scaleX(-1);
+      }
+      
+      @keyframes goRight2 {
+        from {
+          transform: translate(0,0);
+        }
+      
+        to {
+          transform: translate(2920px,0);
         }
       }
 
@@ -187,7 +257,7 @@ html {
 
     .hidded {
 
-        z-index: -1;
+        z-index: -10;
 
     }
 
@@ -292,7 +362,7 @@ html {
             border: 0;
             cursor: url('img/coursor.png'), auto;
             padding: 0 12px 0 12px;
-            background: #1d1d1c50;
+            background: #181818;
             
         }
 
@@ -313,7 +383,7 @@ html {
 
                 width: 300px;
                 height: 100%;
-                background-color: rgba(70, 70, 70, .90);
+                background-color: rgba(70, 70, 70, .95);
                 box-shadow: 7px 0px 18px -1px rgba(0,0,0,0.5);
                 p {
                     color: white;
@@ -330,10 +400,11 @@ html {
                     align-items: center;
                     gap: 5px;
                     padding-left: 5px;
+                    margin-left: 15px;
                     
                     &:hover {
                     opacity: 1;
-                    background-color: #50505090 ;
+                    background-color: #90909050 ;
                     padding-left: 10px;
                     border-radius: 4px;
                     }
@@ -379,7 +450,7 @@ html {
                 }
                 h2 {
                     padding: 20px;
-                    margin: 20xp;
+                    margin: 20px;
                     display: block;
                 }
 
@@ -399,7 +470,8 @@ html {
         justify-content: center;
         align-items: center;
         bottom: 38px;
-        z-index: 100;
+        z-index: 1;
+        text-shadow: 1px 1px 2px black;
 
         * {
 
@@ -469,19 +541,19 @@ html {
             gap: 8px;
             border-radius: 12px;
             border: 1px solid transparent;
-            transition: .2s ease-in-out;
+            transition: .3s ease-in-out;
             backdrop-filter: blur(0px);
             z-index: 0;
 
             &:hover {
 
-                background-color: #50505050;
+                background-color: #ffffff10;
                 // cursor: pointer;
                 transform: scale(1);
-                backdrop-filter: blur(4px);
+                backdrop-filter: blur(2px);
                 
                 h1 {
-                    transform: scale(1.25);
+                    transform: scale(1.1);
                     opacity: 1;
                 }
 
@@ -511,7 +583,8 @@ html {
                 font-size: 20px;
                 letter-spacing: 1px;
                 font-weight: 100;
-                opacity: .7;
+                opacity: .9;
+                text-shadow: 1px 1px 2px black;
 
             }
 
@@ -525,9 +598,9 @@ footer {
 
     width: 100%;
     position: absolute;
-    left: 0;
+    left: -50px;
     bottom: 50px;
-    z-index: 10;
+    z-index: 0;
 
     .icon-wrapper {
         width: fit-content;
@@ -555,7 +628,7 @@ footer {
             height: 80px;
             transition: .2s ease-in-out;
             opacity: 1;
-            margin-top: 0px;
+            margin-top: 2px;
             // cursor: url('img/coursor.png'), auto;
             
             &:hover {

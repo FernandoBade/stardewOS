@@ -91,8 +91,8 @@ html {
   width: 100%;
   height: 100vh;
   z-index: 11;
-  background: -webkit-gradient(linear, left top, left bottom, from(#035eb6), to(#1f8b50));
-  background: linear-gradient(180deg, #035eb6, #1f8b50);
+  background: #000;
+  background-position: center;
   background-size: 100% 100%;
   -webkit-animation: AnimationName 30s ease infinite;
   animation: AnimationName 30s ease infinite;
@@ -149,7 +149,9 @@ html {
 }
 
 .booting img {
-  width: 300px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
 }
 
 .desktop {
@@ -170,15 +172,15 @@ html {
   margin-bottom: 10px;
 }
 
-.desktop .bird {
+.desktop .bird1 {
   position: absolute;
-  top: 70%;
+  top: 65%;
   left: 50px;
   z-index: 0;
   -webkit-animation-duration: 30s;
           animation-duration: 30s;
-  -webkit-animation-name: goRight;
-          animation-name: goRight;
+  -webkit-animation-name: goLeft;
+          animation-name: goLeft;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
@@ -186,7 +188,7 @@ html {
   opacity: 1;
 }
 
-@-webkit-keyframes goRight {
+@-webkit-keyframes goLeft {
   from {
     -webkit-transform: translate(1920px, 0);
             transform: translate(1920px, 0);
@@ -197,7 +199,7 @@ html {
   }
 }
 
-@keyframes goRight {
+@keyframes goLeft {
   from {
     -webkit-transform: translate(1920px, 0);
             transform: translate(1920px, 0);
@@ -205,6 +207,100 @@ html {
   to {
     -webkit-transform: translate(-120px, 0);
             transform: translate(-120px, 0);
+  }
+}
+
+.desktop .bird2 {
+  position: absolute;
+  top: 69%;
+  left: 135px;
+  z-index: 0;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-name: goLeft;
+          animation-name: goLeft;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  opacity: 1;
+}
+
+@keyframes goLeft {
+  from {
+    -webkit-transform: translate(1980px, 0);
+            transform: translate(1980px, 0);
+  }
+  to {
+    -webkit-transform: translate(-200px, 0);
+            transform: translate(-200px, 0);
+  }
+}
+
+.desktop .stars1 {
+  position: absolute;
+  top: 5%;
+  left: -500px;
+  z-index: 0;
+  -webkit-animation-duration: 1500s;
+          animation-duration: 1500s;
+  -webkit-animation-name: goRight2;
+          animation-name: goRight2;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  opacity: .2;
+}
+
+@-webkit-keyframes goRight2 {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(2920px, 0);
+            transform: translate(2920px, 0);
+  }
+}
+
+@keyframes goRight2 {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(2920px, 0);
+            transform: translate(2920px, 0);
+  }
+}
+
+.desktop .stars2 {
+  position: absolute;
+  top: 15%;
+  left: 100px;
+  z-index: 0;
+  -webkit-animation-duration: 900s;
+          animation-duration: 900s;
+  -webkit-animation-name: goRight2;
+          animation-name: goRight2;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  opacity: .7;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+@keyframes goRight2 {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(2920px, 0);
+            transform: translate(2920px, 0);
   }
 }
 
@@ -229,7 +325,7 @@ html {
 }
 
 .desktop .hidded {
-  z-index: -1;
+  z-index: -10;
 }
 
 .desktop .window {
@@ -352,7 +448,7 @@ html {
   border: 0;
   cursor: url("img/coursor.png"), auto;
   padding: 0 12px 0 12px;
-  background: #1d1d1c50;
+  background: #181818;
 }
 
 .desktop .window .window-content {
@@ -380,7 +476,7 @@ html {
 .desktop .window .window-content aside {
   width: 300px;
   height: 100%;
-  background-color: rgba(70, 70, 70, 0.9);
+  background-color: rgba(70, 70, 70, 0.95);
   -webkit-box-shadow: 7px 0px 18px -1px rgba(0, 0, 0, 0.5);
           box-shadow: 7px 0px 18px -1px rgba(0, 0, 0, 0.5);
 }
@@ -410,11 +506,12 @@ html {
           align-items: center;
   gap: 5px;
   padding-left: 5px;
+  margin-left: 15px;
 }
 
 .desktop .window .window-content aside p:hover {
   opacity: 1;
-  background-color: #50505090;
+  background-color: #90909050;
   padding-left: 10px;
   border-radius: 4px;
 }
@@ -465,7 +562,7 @@ html {
 
 .desktop .window .window-content main h2 {
   padding: 20px;
-  margin: 20xp;
+  margin: 20px;
   display: block;
 }
 
@@ -487,7 +584,8 @@ html {
       -ms-flex-align: center;
           align-items: center;
   bottom: 38px;
-  z-index: 100;
+  z-index: 1;
+  text-shadow: 1px 1px 2px black;
 }
 
 .desktop .current-date * {
@@ -565,24 +663,24 @@ html {
   gap: 8px;
   border-radius: 12px;
   border: 1px solid transparent;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
   -webkit-backdrop-filter: blur(0px);
           backdrop-filter: blur(0px);
   z-index: 0;
 }
 
 .desktop .icons .icon:hover {
-  background-color: #50505050;
+  background-color: #ffffff10;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
 
 .desktop .icons .icon:hover h1 {
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   opacity: 1;
 }
 
@@ -605,15 +703,16 @@ html {
   font-size: 20px;
   letter-spacing: 1px;
   font-weight: 100;
-  opacity: .7;
+  opacity: .9;
+  text-shadow: 1px 1px 2px black;
 }
 
 footer {
   width: 100%;
   position: absolute;
-  left: 0;
+  left: -50px;
   bottom: 50px;
-  z-index: 10;
+  z-index: 0;
 }
 
 footer .icon-wrapper {
@@ -651,7 +750,7 @@ footer .icon-wrapper img {
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   opacity: 1;
-  margin-top: 0px;
+  margin-top: 2px;
 }
 
 footer .icon-wrapper img:hover {
