@@ -547,7 +547,7 @@ html {
 
             &:hover {
 
-                background-color: #ffffff10;
+                background-color: #30303025;
                 // cursor: pointer;
                 transform: scale(1);
                 backdrop-filter: blur(2px);
@@ -614,12 +614,12 @@ footer {
         margin: 0 auto;
         padding: 15px;
         gap: 10px;
-        color: rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255, 0.25);
         
         
         // cursor: url('img/coursor.png'), auto;
         &:hover {
-            background-color: #ffffff30;
+            background-color: #ffffff50;
             backdrop-filter: blur(2px);
             // cursor: url('img/coursor.png'), auto;
         }
@@ -676,7 +676,20 @@ footer {
         font-size: 15px;
         color: white;
     }
+    
+    
+}
 
+.junimo{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    right: 0;
+        img{
+        width: 50px;
+        height: 50px;
+    }
 }
 
 .subfolder{

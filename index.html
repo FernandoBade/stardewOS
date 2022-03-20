@@ -31,6 +31,7 @@
         <section class="window" id="computer">
 
             <header class="window-header" id="computerHeader">
+
                 <section class="buttons">
                     <span class="minimize" onclick="maximizeHandler('computer')">
                         <img src="img/maximize.png" alt="">
@@ -176,7 +177,7 @@
 
             </section>
 
-        </section>        
+        </section>
         <section class="window hidded" id="wiki">
 
             <header class="window-header" id="wikiHeader">
@@ -241,7 +242,6 @@
 
         </section>
         <section id="play" class="current-date">
-
             <span class="time">
                 <span id="currentHour"></span>:<span id="currentMinute"></span>
             </span>
@@ -253,29 +253,30 @@
             <ul class="icons">
 
 
-                <!-- <li class="icon">
-                    <img src="img/pc.png" onclick="windowHandler('computer')">
-                    <h1>computer</h1>
-                </li> -->
                 <li class="icon">
-                    <img src="img/f1.png" onclick="windowHandler('computer')">
+                    <img src="img/dwarf.png" onclick="windowHandler('computer')">
+                    <h1>computer</h1>
+                </li>
+                <li class="icon">
+                    <img src="img/star.png" onclick="windowHandler('computer')">
                     <h1>favorites</h1>
                 </li>
+                <li class="icon">
+                    <img src="img/files.png" onclick="windowHandler('computer')">
+                    <h1>documents</h1>
+                </li>
+                <!-- <li class="icon">
+                    <img src="img/star.png">
+                    <h1>settings</h1>
+                </li> -->
                 <li class="icon">
                     <img src="img/trash.png" onclick="windowHandler('trash')">
                     <h1>trash</h1>
                 </li>
-                <li class="icon">
-                    <img src="img/files.png">
-                    <h1>documents</h1>
-                </li>
-                <li class="icon">
-                    <img src="img/settings.png">
-                    <h1>settings</h1>
-                </li>
             </ul>
         </section>
     </main>
+
     <footer>
 
         <section class="icon-wrapper">
@@ -306,9 +307,9 @@
             <img src="img/m2.png" onclick="windowHandler('wiki')">
             <img src="img/m3.png" onclick="windowHandler('browser')">
             <img src="img/m1.png" onclick="windowHandler('map')">
-            <a href="steam://run/413150"><img src="img/m4.png"></a>
-
-
+            <a href="steam://run/413150">
+                <img src="img/m4.png">
+            </a>
         </section>
     </footer>
 
