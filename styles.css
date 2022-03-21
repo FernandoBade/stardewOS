@@ -242,8 +242,8 @@ html {
   top: 5%;
   left: -500px;
   z-index: 0;
-  -webkit-animation-duration: 1500s;
-          animation-duration: 1500s;
+  -webkit-animation-duration: 1200s;
+          animation-duration: 1200s;
   -webkit-animation-name: goRight2;
           animation-name: goRight2;
   -webkit-animation-iteration-count: infinite;
@@ -277,11 +277,11 @@ html {
 
 .desktop .stars2 {
   position: absolute;
-  top: 15%;
+  top: 18%;
   left: 100px;
   z-index: 0;
-  -webkit-animation-duration: 900s;
-          animation-duration: 900s;
+  -webkit-animation-duration: 750s;
+          animation-duration: 750s;
   -webkit-animation-name: goRight2;
           animation-name: goRight2;
   -webkit-animation-iteration-count: infinite;

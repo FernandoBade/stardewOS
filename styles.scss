@@ -194,7 +194,7 @@ html {
         top: 5%;
         left: -500px;
         z-index: 0;
-        animation-duration: 1500s;
+        animation-duration: 1200s;
         animation-name: goRight2;
         animation-iteration-count: infinite;
         animation-timing-function:linear;
@@ -212,10 +212,10 @@ html {
       }
     .stars2 {
         position: absolute;
-        top: 15%;
+        top: 18%;
         left: 100px;
         z-index: 0;
-        animation-duration: 900s;
+        animation-duration: 750s;
         animation-name: goRight2;
         animation-iteration-count: infinite;
         animation-timing-function:linear;
