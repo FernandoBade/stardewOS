@@ -16,7 +16,7 @@ I've learned a lot of new tricks adding details to the interface, like music sys
 
 The Stardew Valley theme is an humble tribute to a game that make so many people happy every day and easily became one of my favorite games.
 
-> **You can test a desktop version [here]().**
+> **You can test a desktop live version <a href="https://fernandobade.github.io/stardewOS/" target="_blank">here</a>**.
 
 <hr>
 
