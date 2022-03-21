@@ -12,7 +12,7 @@ stardewOS
 
 This project is a study about UX/UI design and a test to my recently knowledge about HTML, CSS and Javascript.
 
-I've learned a lot of new tricks adding details to the interface, like music system and draging feature on widows.
+I've learned a lot of new tricks adding details to the interface, like music system and draging feature on windows.
 
 The Stardew Valley theme is an humble tribute to a game that make so many people happy every day and easily became one of my favorite games.
 
@@ -23,10 +23,10 @@ The Stardew Valley theme is an humble tribute to a game that make so many people
 ### Special thanks:
 
 
-• **<a href="https://github.com/IvinRodrigues" target="_blank">Ivin Rodrigues</a>**, my front-end professor  who made a live stream and came up with the inicial structure. You should <a href="https://www.twitch.tv/ivinzivel" target="_blank">follow him at Twich</a>.
+• **<a href="https://github.com/IvinRodrigues" target="_blank">Ivin Rodrigues</a>**, my front-end professor who made a live stream and came up with the inicial structure. You should <a href="https://www.twitch.tv/ivinzivel" target="_blank">follow him at Twich</a>.
 
-• **<a href="https://stardewvalleywiki.com/" target="_blank">Stardew Wiki</a>**, for an amazing job training and uniting the community;
+• **<a href="https://stardewvalleywiki.com/" target="_blank">Stardew Wiki</a>**, for an amazing job enchanting the community;
 
-• **<a href="https://www.reddit.com/user/hpeinar" target="_blank">hpeinar</a>** and everyone on <a href="https://stardew.info/planner/" target="_blank">Stardew Valley Planner</a> web tool;
+• **<a href="https://www.reddit.com/user/hpeinar" target="_blank">hpeinar</a>** and everyone from <a href="https://stardew.info/planner/" target="_blank">Stardew Valley Planner</a> web tool;
 
 • **<a href="https://twitter.com/concernedape" target="_blank">ConcernedApe</a>**, of course, for that amazing game and experience that Stardew Valley is, also the owner of all content and materials used on this project, its trademarks and copyrights.</p>
