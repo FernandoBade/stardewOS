@@ -25,7 +25,7 @@ The Stardew Valley theme is an humble tribute to a game that make so many people
 
 • **<a href="https://github.com/IvinRodrigues" target="_blank">Ivin Rodrigues</a>**, my front-end professor who made a live stream and came up with the inicial structure. You should <a href="https://www.twitch.tv/ivinzivel" target="_blank">follow him at Twich</a>.
 
-• **<a href="https://stardewvalleywiki.com/" target="_blank">Stardew Wiki</a>**, for an amazing job enchanting the community;
+• **<a href="https://stardewvalleywiki.com/" target="_blank">Stardew Wiki</a>**, for an amazing job gettering the community into this universe;
 
 • **<a href="https://www.reddit.com/user/hpeinar" target="_blank">hpeinar</a>** and everyone from <a href="https://stardew.info/planner/" target="_blank">Stardew Valley Planner</a> web tool;
 
