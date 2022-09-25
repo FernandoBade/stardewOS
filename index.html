@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+    
+This project is a study about UX/UI design and a test to my recently knowledge about HTML, CSS and Javascript.
+
+The Stardew Valley theme is an humble tribute to a game that make so many people happy every day and easily became one of my favorite games.
+
+Many thanks to my front-end professor, Ivin Rodrigues (https://www.twitch.tv/ivinzivel), who made a live about the inicial structure, and the creator of that amazing game, ConcernedApe (https://twitter.com/concernedape).
+
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>stardewOS</title>
+</head>
+
+<body>
+
+    <section class="booting" id="bootSection">
+        <div>
+            <h1>
+                <img src="img/loading.png" class="gif-loading"><br>
+            </h1>
+        </div>
+    </section>
+
+    <main class="desktop">
+        <img src="img/stars.png" class="stars1">
+        <img src="img/stars.png" class="stars2">
+        <img src="img/bird.gif" class="bird1">
+        <img src="img/bird.gif" class="bird2">
+
+        <section class="window" id="computer">
+
+            <header class="window-header" id="computerHeader">
+
+                <section class="buttons">
+                    <span class="minimize" onclick="maximizeHandler('computer')">
+                        <img src="img/maximize.png" alt="">
+                    </span>
+                    <span class="close" onclick="windowHandler('computer')">
+                        <img src="img/close.png">
+                    </span>
+                </section>
+                <span class="window-name">Robin's PC</span>
+            </header>
+
+            <section class="window-content computer">
+
+                <aside>
+                    <div class="user">
+                        <img src="img/user.png">
+                    </div>
+
+                    <div>
+                        <p>
+                            <img src="img/star.png">
+                            favorites
+                        </p>
+
+                        <p>
+                            <img src="img/folder.png">
+                            downloads
+                        </p>
+                        <p>
+                            <img src="img/files.png">
+                            documents
+                        </p>
+
+                        <p>
+                            <img src="img/trash.png">
+                            trash
+                        </p>
+                        <p>
+                            <img src="img/dwarf.png">
+                            C:/system
+                        </p>
+                    </div>
+                </aside>
+
+                <main class="folders">
+                    <div class="subfolder">
+                        <ul class="icons">
+
+                            <li class="icon">
+                                <img src="img/icon1.png">
+                                <h1>images</h1>
+                            </li>
+
+                            <li class="icon">
+                                <img src="img/icon1.png">
+                                <h1>games</h1>
+                            </li>
+
+                            <li class="icon">
+                                <img src="img/icon1.png">
+                                <h1>movies</h1>
+                            </li>
+                        </ul>
+                    </div>
+                </main>
+
+            </section>
+
+        </section>
+        <section class="window" id="trash">
+
+            <header class="window-header" id="computerTrash">
+                <section class="buttons">
+                    <span class="minimize" onclick="maximizeHandler('trash')">
+                        <img src="img/maximize.png" alt="">
+                    </span>
+                    <span class="close" onclick="windowHandler('trash')">
+                        <img src="img/close.png">
+                    </span>
+                </section>
+                <span class="window-name">trash</span>
+            </header>
+
+            <section class="window-content computer">
+
+                <aside>
+                    <div class="user">
+                        <img src="img/user.png">
+                    </div>
+
+                    <div>
+                        <p>
+                            <img src="img/star.png">
+                            favorites
+                        </p>
+                        <p>
+                            <img src="img/folder.png">
+                            downloads
+                        </p>
+                        <p>
+                            <img src="img/files.png">
+                            documents
+                        </p>
+
+                        <p>
+                            <img src="img/trash.png">
+                            trash
+                        </p>
+                        <p>
+                            <img src="img/dwarf.png">
+                            C:/system
+                        </p>
+                    </div>
+                </aside>
+
+                <main class="folders">
+                    <div class="subfolder">
+                        <ul id="trash" class="icons">
+
+                            <li class="icon">
+                                <img src="img/t2.png">
+                                <h1>mod_list.txt</h1>
+                            </li>
+
+                            <li class="icon">
+                                <img src="img/t2.png">
+                                <h1>testing.txt</h1>
+                            </li>
+
+                            <li class="icon">
+                                <img src="img/t1.png">
+                                <h1>bad-vibes.mp3</h1>
+                            </li>
+
+                            </li>
+                        </ul>
+                    </div>
+                </main>
+
+            </section>
+
+        </section>
+        <section class="window hidded" id="wiki">
+
+            <header class="window-header" id="wikiHeader">
+                <section class="buttons">
+                    <span class="minimize" onclick="maximizeHandler('wiki')">
+                        <img src="img/maximize.png" alt="">
+                    </span>
+                    <span class="close" onclick="windowHandler('wiki')">
+                        <img src="img/close.png">
+                    </span>
+                </section>
+                <span class="window-name">Stardew Valley Wiki</span>
+            </header>
+            <iframe src="https://stardewvalleywiki.com/Stardew_Valley_Wiki" frameborder="0"></iframe>
+
+        </section>
+        <section class="window hidded" id="browser">
+
+            <header class="window-header" id="browserHeader">
+                <section class="buttons">
+                    <span class="minimize" onclick="maximizeHandler('browser')">
+                        <img src="img/maximize.png" alt="">
+                    </span>
+                    <span class="close" onclick="windowHandler('browser')">
+                        <img src="img/close.png">
+                    </span>
+                </section>
+                <span class="window-name">Bing</span>
+            </header>
+            <iframe src="https://www.bing.com/?cc=br" frameborder="0"></iframe>
+
+        </section>
+        <section class="window hidded" id="map">
+
+            <header class="window-header" id="mapHeader">
+                <section class="buttons">
+                    <span class="minimize" onclick="maximizeHandler('map')">
+                        <img src="img/maximize.png" alt="">
+                    </span>
+                    <span class="close" onclick="windowHandler('map')">
+                        <img src="img/close.png">
+                    </span>
+                </section>
+                <span class="window-name">Stardew Valley Map Planner</span>
+            </header>
+            <iframe src="https://stardew.info/planner/" loading="lazy"></iframe>
+
+        </section>
+        <section id="play" class="current-date">
+            <span class="time">
+                <span id="currentHour"></span>:<span id="currentMinute"></span>
+            </span>
+            <span class="date">
+                <span id="currentDay"></span>/<span id="currentMonth"></span>/<span id="currentYear"></span>
+            </span>
+        </section>
+        <section class="subicon">
+            <ul class="icons">
+
+
+                <li class="icon">
+                    <img src="img/dwarf.png" onclick="windowHandler('computer')">
+                    <h1>computer</h1>
+                </li>
+                <li class="icon">
+                    <img src="img/star.png" onclick="windowHandler('computer')">
+                    <h1>favorites</h1>
+                </li>
+                <li class="icon">
+                    <img src="img/files.png" onclick="windowHandler('computer')">
+                    <h1>documents</h1>
+                </li>
+                <!-- <li class="icon">
+                    <img src="img/star.png">
+                    <h1>settings</h1>
+                </li> -->
+                <li class="icon">
+                    <img src="img/trash.png" onclick="windowHandler('trash')">
+                    <h1>trash</h1>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+
+        <section class="icon-wrapper">
+            <section class="radioPlayer">
+                <div class="player">
+
+                    <img id="backImage" src="img/song-prev.png">
+
+                    <img id="swapImage" src="img/song1.png">
+
+                    <img id="nextImage" src="img/song-next.png">
+
+                    <img id="stopImage" class="stopImage" src="img/music-off.png">
+                </div>
+                <div class="playlist">
+                    <div class="song" url="audio/0.mp3">
+                    </div>
+                    <div class="song" url="audio/1.mp3">
+                    </div>
+                    <div class="song" url="audio/2.mp3">
+                    </div>
+                    <div class="song" url="audio/3.mp3">
+                    </div>
+                    <div class="song" url="audio/4.mp3">
+                    </div>
+                </div>
+            </section>
+            <img src="img/m2.png" onclick="windowHandler('wiki')">
+            <img src="img/m3.png" onclick="windowHandler('browser')">
+            <img src="img/m1.png" onclick="windowHandler('map')">
+            <a href="steam://run/413150">
+                <img src="img/m4.png">
+            </a>
+        </section>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/audioPlayer.js"></script>
+
+</body>
+
+</html>

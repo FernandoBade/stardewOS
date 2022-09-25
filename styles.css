@@ -1,0 +1,844 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: 'Stardew Valley';
+  src: url("font/StardewValley.woff") format("woff2"), url("font/StardewValley.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Stardew Valley';
+  font-weight: 100;
+  letter-spacing: 1px;
+  cursor: url("img/coursor.png"), auto;
+}
+
+html {
+  overflow: hidden;
+}
+
+.booting-finish {
+  z-index: -2 !important;
+}
+
+@-webkit-keyframes booting {
+  0% {
+    -webkit-transform: scale(20);
+            transform: scale(20);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+  }
+  20% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+}
+
+@keyframes booting {
+  0% {
+    -webkit-transform: scale(20);
+            transform: scale(20);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+  }
+  20% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+}
+
+.booting {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 11;
+  background: #000;
+  background-position: center;
+  background-size: 100% 100%;
+  -webkit-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+  -webkit-animation: booting 5s forwards;
+          animation: booting 5s forwards;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 76% 0%;
+  }
+  50% {
+    background-position: 25% 100%;
+  }
+  100% {
+    background-position: 76% 0%;
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 76% 0%;
+  }
+  50% {
+    background-position: 25% 100%;
+  }
+  100% {
+    background-position: 76% 0%;
+  }
+}
+
+.booting h1 {
+  color: white;
+  text-align: center;
+  font-weight: 100;
+  font-family: 'Stardew Valley', sans-serif;
+}
+
+.booting div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.booting img {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.desktop {
+  width: 100%;
+  height: 100vh;
+  background-image: url("img/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  padding: 20px 5px;
+  overflow: hidden;
+  z-index: -1000;
+}
+
+.desktop .gif-date {
+  width: 48px;
+  margin-bottom: 10px;
+}
+
+.desktop .bird1 {
+  position: absolute;
+  top: 65%;
+  left: 50px;
+  z-index: 0;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-name: goLeft;
+          animation-name: goLeft;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  opacity: 1;
+}
+
+@-webkit-keyframes goLeft {
+  from {
+    -webkit-transform: translate(1920px, 0);
+            transform: translate(1920px, 0);
+  }
+  to {
+    -webkit-transform: translate(-120px, 0);
+            transform: translate(-120px, 0);
+  }
+}
+
+@keyframes goLeft {
+  from {
+    -webkit-transform: translate(1920px, 0);
+            transform: translate(1920px, 0);
+  }
+  to {
+    -webkit-transform: translate(-120px, 0);
+            transform: translate(-120px, 0);
+  }
+}
+
+.desktop .bird2 {
+  position: absolute;
+  top: 69%;
+  left: 135px;
+  z-index: 0;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-name: goLeft;
+          animation-name: goLeft;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  opacity: 1;
+}
+
+@keyframes goLeft {
+  from {
+    -webkit-transform: translate(1980px, 0);
+            transform: translate(1980px, 0);
+  }
+  to {
+    -webkit-transform: translate(-200px, 0);
+            transform: translate(-200px, 0);
+  }
+}
+
+.desktop .stars1 {
+  position: absolute;
+  top: 5%;
+  left: -500px;
+  z-index: 0;
+  -webkit-animation-duration: 1200s;
+          animation-duration: 1200s;
+  -webkit-animation-name: goRight2;
+          animation-name: goRight2;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  opacity: .2;
+}
+
+@-webkit-keyframes goRight2 {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(2920px, 0);
+            transform: translate(2920px, 0);
+  }
+}
+
+@keyframes goRight2 {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(2920px, 0);
+            transform: translate(2920px, 0);
+  }
+}
+
+.desktop .stars2 {
+  position: absolute;
+  top: 18%;
+  left: 100px;
+  z-index: 0;
+  -webkit-animation-duration: 750s;
+          animation-duration: 750s;
+  -webkit-animation-name: goRight2;
+          animation-name: goRight2;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  opacity: .7;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+@keyframes goRight2 {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(2920px, 0);
+            transform: translate(2920px, 0);
+  }
+}
+
+.desktop .window.opened.maximized {
+  top: 0 !important;
+  left: 0 !important;
+  width: 100%;
+  height: 100vh;
+}
+
+.desktop .window.opened {
+  width: 60%;
+  height: 70vh;
+  top: 6vh;
+  left: 20%;
+  opacity: 1;
+  z-index: 5 !important;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+}
+
+.desktop .hidded {
+  z-index: -10;
+}
+
+.desktop .window {
+  width: 60%;
+  height: 70vh;
+  top: 6vh;
+  left: 20%;
+  position: absolute;
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 0;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  opacity: 0;
+  -webkit-filter: blur(32px);
+          filter: blur(32px);
+  -webkit-transition: opacity .6s, -webkit-transform .6s ease-in-out, -webkit-filter .6s;
+  transition: opacity .6s, -webkit-transform .6s ease-in-out, -webkit-filter .6s;
+  transition: transform .6s ease-in-out, opacity .6s, filter .6s;
+  transition: transform .6s ease-in-out, opacity .6s, filter .6s, -webkit-transform .6s ease-in-out, -webkit-filter .6s;
+}
+
+.desktop .window .window-header {
+  width: 100%;
+  height: 42px;
+  background-color: #171717e8;
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-inline: 12px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.desktop .window .window-header .window-name {
+  color: white;
+  font-weight: 300;
+  text-align: center;
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.desktop .window .window-header .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.desktop .window .window-header .buttons span {
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  opacity: .8;
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+.desktop .window .window-header .buttons span:hover {
+  opacity: 1;
+}
+
+.desktop .window .window-header .buttons .close {
+  background-color: #fe5d55;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.desktop .window .window-header .buttons .maximize {
+  background-color: #25c03c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.desktop .window .window-header .buttons img {
+  width: 20px;
+  height: 20px;
+}
+
+.desktop .window iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  cursor: url("img/coursor.png"), auto;
+  padding: 0 12px 0 12px;
+  background: #181818;
+}
+
+.desktop .window .window-content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+
+.desktop .window .window-content .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  top: 10px;
+  left: 20px;
+}
+
+.desktop .window .window-content aside {
+  width: 300px;
+  height: 100%;
+  background-color: rgba(70, 70, 70, 0.95);
+  -webkit-box-shadow: 7px 0px 18px -1px rgba(0, 0, 0, 0.5);
+          box-shadow: 7px 0px 18px -1px rgba(0, 0, 0, 0.5);
+}
+
+.desktop .window .window-content aside p {
+  color: white;
+  margin: 5px;
+  line-height: 1.5rem;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-family: monospace;
+  opacity: .9;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  padding-left: 5px;
+  margin-left: 15px;
+}
+
+.desktop .window .window-content aside p:hover {
+  opacity: 1;
+  background-color: #90909050;
+  padding-left: 10px;
+  border-radius: 4px;
+}
+
+.desktop .window .window-content aside p img {
+  width: 20px;
+  height: 20px;
+}
+
+.desktop .window .window-content aside .user {
+  display: block;
+  text-align: center;
+  padding: 20px;
+}
+
+.desktop .window .window-content aside .user img {
+  width: 100%;
+}
+
+.desktop .window .window-content aside .user h1 {
+  color: white;
+  padding: 10px;
+}
+
+.desktop .window .window-content main {
+  width: 100%;
+  height: 100%;
+  background-color: #303030;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 12px 0 12px;
+  background: #303030;
+}
+
+.desktop .window .window-content main h1 {
+  color: #fefefe;
+  font-weight: 300;
+  text-align: center;
+  font-size: 14px;
+}
+
+.desktop .window .window-content main h2 {
+  padding: 20px;
+  margin: 20px;
+  display: block;
+}
+
+.desktop .current-date {
+  color: white;
+  position: absolute;
+  right: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 38px;
+  z-index: 1;
+  text-shadow: 1px 1px 2px black;
+}
+
+.desktop .current-date * {
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.desktop .current-date:hover .time, .desktop .current-date:hover .date, .desktop .current-date:hover .current-date {
+  opacity: 1;
+}
+
+.desktop .current-date:hover .gif-date {
+  opacity: 1;
+}
+
+.desktop .current-date .time {
+  font-weight: 500;
+  font-size: 46px;
+  letter-spacing: 2px;
+  opacity: .6;
+}
+
+.desktop .current-date .date {
+  font-weight: 100;
+  font-size: 18px;
+  letter-spacing: 2px;
+  opacity: .4;
+}
+
+.desktop .current-date .gif-date {
+  opacity: .6;
+}
+
+.desktop .subicon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+}
+
+.desktop .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.desktop .icons .icon {
+  width: 120px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+  z-index: 0;
+}
+
+.desktop .icons .icon:hover {
+  background-color: #30303025;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+
+.desktop .icons .icon:hover h1 {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 1;
+}
+
+.desktop .icons .icon:hover * {
+  opacity: 1;
+}
+
+.desktop .icons .icon * {
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  opacity: 1;
+}
+
+.desktop .icons .icon img {
+  width: 42px;
+}
+
+.desktop .icons .icon h1 {
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  opacity: .9;
+  text-shadow: 1px 1px 2px black;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  left: -50px;
+  bottom: 50px;
+  z-index: 0;
+}
+
+footer .icon-wrapper {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 45px;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff30;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  margin: 0 auto;
+  padding: 15px;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+footer .icon-wrapper:hover {
+  background-color: #ffffff50;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+
+footer .icon-wrapper img {
+  height: 80px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  opacity: 1;
+  margin-top: 2px;
+}
+
+footer .icon-wrapper img:hover {
+  -webkit-transform: scale(1.2) translateY(-2px);
+          transform: scale(1.2) translateY(-2px);
+  opacity: 1;
+}
+
+footer .icon-wrapper img#backImage {
+  width: 24px;
+  height: 24px;
+  opacity: .6;
+}
+
+footer .icon-wrapper img#backImage:hover {
+  -webkit-transform: scale(1.2) translateY(-2px);
+          transform: scale(1.2) translateY(-2px);
+  opacity: 1;
+}
+
+footer .icon-wrapper img#swapImage {
+  width: 24px;
+  height: 24px;
+  opacity: .6;
+}
+
+footer .icon-wrapper img#swapImage:hover {
+  -webkit-transform: scale(1.2) translateY(-2px);
+          transform: scale(1.2) translateY(-2px);
+  opacity: 1;
+}
+
+footer .icon-wrapper img#nextImage {
+  width: 24px;
+  height: 24px;
+  opacity: .6;
+}
+
+footer .icon-wrapper img#nextImage:hover {
+  -webkit-transform: scale(1.2) translateY(-2px);
+          transform: scale(1.2) translateY(-2px);
+  opacity: 1;
+}
+
+footer .icon-wrapper img#stopImage {
+  display: none;
+}
+
+footer h4 {
+  font-family: 'Stardew Valley';
+  font-weight: 100;
+  font-size: 15px;
+  color: white;
+}
+
+.junimo {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
+
+.junimo img {
+  width: 50px;
+  height: 50px;
+}
+
+.subfolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+@media (max-width: 836px) {
+  .current-date * {
+    display: none;
+  }
+}
+
+.desktop .window .window-content main h1 {
+  font-family: monospace;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=styles.css.map */

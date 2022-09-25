@@ -1,0 +1,711 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+    font-family: 'Stardew Valley';
+    src: url('font/StardewValley.woff') format('woff2'),
+        url('font/StardewValley.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Stardew Valley';
+    font-weight: 100;
+    letter-spacing: 1px;
+    cursor: url('img/coursor.png'), auto;
+
+       
+}
+
+html {
+
+    overflow: hidden;
+
+}
+
+.booting-finish {
+
+    z-index: -2 !important;
+
+}
+
+@keyframes booting {
+    0% {
+
+        transform: scale(20);
+        filter: blur(4px);
+
+    }
+    20% {
+
+        transform: scale(1);
+        filter: blur(0);
+        opacity: 1;
+
+    }
+    80% {
+
+        transform: scale(1);
+        filter: blur(0);
+        opacity: 1;
+
+    }
+    100% {
+
+        transform: scale(2);
+        filter: blur(4px);
+        opacity: 0;
+
+    }
+}
+
+.booting {
+
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 11;
+    background: #000;
+    background-position: center;
+    background-size: 100% 100%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    -o-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+    animation: booting 5s forwards;
+
+    @-webkit-keyframes AnimationName {
+        0%{background-position:76% 0%}
+        50%{background-position:25% 100%}
+        100%{background-position:76% 0%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:76% 0%}
+        50%{background-position:25% 100%}
+        100%{background-position:76% 0%}
+    }
+    @-o-keyframes AnimationName {
+        0%{background-position:76% 0%}
+        50%{background-position:25% 100%}
+        100%{background-position:76% 0%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:76% 0%}
+        50%{background-position:25% 100%}
+        100%{background-position:76% 0%}
+    }
+
+    h1 {
+
+        color: white;
+        text-align: center;
+        font-weight: 100;
+        font-family: 'Stardew Valley', sans-serif;
+
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    img {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+
+}
+
+.desktop {
+
+    width: 100%;
+    height: 100vh;
+    // background: #303030;
+    background-image: url('img/bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    padding: 20px 5px;
+    overflow: hidden;
+    z-index: -1000;
+
+    .gif-date{
+        width: 48px;
+        margin-bottom: 10px;
+    }
+
+    .bird1 {
+        position: absolute;
+        top: 65%;
+        left: 50px;
+        z-index: 0;
+        animation-duration: 30s;
+        animation-name: goLeft;
+        animation-iteration-count: infinite;
+        animation-timing-function:linear;
+        opacity: 1;
+        
+      }
+      
+      @keyframes goLeft {
+        from {
+          transform: translate(1920px,0);
+        }
+      
+        to {
+          transform: translate(-120px,0);
+        }
+      }
+
+    .bird2 {
+        position: absolute;
+        top: 69%;
+        left: 135px;
+        z-index: 0;
+        animation-duration: 30s;
+        animation-name: goLeft;
+        animation-iteration-count: infinite;
+        animation-timing-function:linear;
+        opacity: 1;
+        
+      }
+      
+      @keyframes goLeft {
+        from {
+          transform: translate(1980px,0);
+        }
+      
+        to {
+          transform: translate(-200px,0);
+        }
+      }
+
+    .stars1 {
+        position: absolute;
+        top: 5%;
+        left: -500px;
+        z-index: 0;
+        animation-duration: 1200s;
+        animation-name: goRight2;
+        animation-iteration-count: infinite;
+        animation-timing-function:linear;
+        opacity: .2;
+      }
+      
+      @keyframes goRight2 {
+        from {
+          transform: translate(0,0);
+        }
+      
+        to {
+          transform: translate(2920px,0);
+        }
+      }
+    .stars2 {
+        position: absolute;
+        top: 18%;
+        left: 100px;
+        z-index: 0;
+        animation-duration: 750s;
+        animation-name: goRight2;
+        animation-iteration-count: infinite;
+        animation-timing-function:linear;
+        opacity: .7;
+        transform: scaleX(-1);
+      }
+      
+      @keyframes goRight2 {
+        from {
+          transform: translate(0,0);
+        }
+      
+        to {
+          transform: translate(2920px,0);
+        }
+      }
+
+    .window.opened.maximized {
+
+        top: 0 !important;
+        left: 0 !important;
+        width: 100%;
+        height: 100vh;
+
+    }
+
+    .window.opened {
+
+        width: 60%;
+        height: 70vh;
+        top: 6vh;
+        left: 20%;
+        opacity: 1;
+        z-index: 5 !important;
+        transform: scale(1);
+        filter: blur(0px);
+
+    }
+
+    .hidded {
+
+        z-index: -10;
+
+    }
+
+    .window {
+
+        width: 60%;
+        height: 70vh;
+        top: 6vh;
+        left: 20%;
+        position: absolute;
+        border-radius: 12px;
+        overflow: hidden;
+        z-index: 0;
+        transform: scale(2);
+        opacity: 0;
+        filter: blur(32px);
+        transition: transform .6s ease-in-out, opacity .6s, filter .6s;
+
+        .window-header {
+
+            width: 100%;
+            height: 42px;
+            background-color: #171717e8;
+            backdrop-filter: blur(12px);
+            display: flex;
+            padding-inline: 12px;
+            justify-content:flex-end;
+            align-items: center;
+            position: relative;
+
+            .window-name {
+
+                color: white;
+                font-weight: 300;
+                text-align: center;
+                width: 50%;
+                position: absolute;
+                left: 25%;
+                font-weight: lighter;
+                font-size: 20px;
+            }
+
+            .buttons {
+
+                display: flex;
+                gap: 10px;
+
+                span {
+
+                    display: block;
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 50%;
+                    transition: .2s ease-in-out;
+                    opacity: .8;
+                    font-size: 10px;
+                    font-weight: bolder;
+
+                    &:hover {
+
+                        opacity: 1;
+                        // cursor: pointer;
+
+                    }
+
+                }
+
+                .close {
+
+                    background-color: #fe5d55;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    align-content: space-evenly;
+                    justify-content: space-evenly;
+                }
+
+                .maximize {
+
+                    background-color: #25c03c;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    align-content: space-evenly;
+                    justify-content: space-evenly;
+                   
+                }
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+
+            }
+
+        }
+
+        iframe {
+
+            width: 100%;
+            height: 100%;
+            border: 0;
+            cursor: url('img/coursor.png'), auto;
+            padding: 0 12px 0 12px;
+            background: #181818;
+            
+        }
+
+        .window-content {
+
+            width: 100%;
+            height: 100%;
+            display: flex;
+            backdrop-filter: blur(4px);
+
+            .icons{
+                display: flex;
+                flex-direction: row;
+                top: 10px;
+                left: 20px;
+            }
+            aside {
+
+                width: 300px;
+                height: 100%;
+                background-color: rgba(70, 70, 70, .95);
+                box-shadow: 7px 0px 18px -1px rgba(0,0,0,0.5);
+                p {
+                    color: white;
+                    margin: 5px;
+                    line-height: 1.5rem;
+                    font-size: 12px;
+                    letter-spacing: 2px;
+                    font-family: monospace;
+                    opacity: .9;
+                    transition: .3s ease-in-out;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 5px;
+                    padding-left: 5px;
+                    margin-left: 15px;
+                    
+                    &:hover {
+                    opacity: 1;
+                    background-color: #90909050 ;
+                    padding-left: 10px;
+                    border-radius: 4px;
+                    }
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                }
+
+            .user {
+                display: block;
+                text-align: center;
+                padding: 20px;
+                img {
+                    width: 100%;
+                }
+                h1 {
+                    color: white;
+                    padding: 10px;
+                }
+            }
+        }
+            main {
+
+                width: 100%;
+                height: 100%;
+                background-color: #303030;
+                // padding: 32px;
+                display: flex;
+                justify-content: left;
+                align-items: flex-start;
+                padding: 0 12px 0 12px;
+                background: #303030;
+
+                h1 {
+                    color: #fefefe;
+                    font-weight: 300;
+                    text-align: center;
+                    font-size: 14px;
+
+                }
+                h2 {
+                    padding: 20px;
+                    margin: 20px;
+                    display: block;
+                }
+
+            }
+
+        }
+
+    }
+
+    .current-date {
+
+        color: white;
+        position: absolute;
+        right: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        bottom: 38px;
+        z-index: 1;
+        text-shadow: 1px 1px 2px black;
+
+        * {
+
+            transition: .2s ease-in-out;
+
+        }
+
+        &:hover {
+
+            // cursor: default;
+
+            .time, .date, .current-date {
+
+                opacity: 1;
+
+            }
+
+            .gif-date{
+                opacity: 1;
+            }
+
+        }
+
+        .time {
+
+            font-weight: 500;
+            font-size: 46px;
+            letter-spacing: 2px;
+            opacity: .6;
+
+        }
+
+        .date {
+
+            font-weight: 100;
+            font-size: 18px;
+            letter-spacing: 2px;
+            opacity: .4;
+
+        }
+
+        .gif-date{
+            opacity: .6;
+        }
+
+    }
+    .subicon {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .icons {
+
+        display: flex;
+        gap:10px;
+        flex-direction: column;
+
+        .icon {
+
+            width: 120px;
+            height: fit-content;
+            display: flex;
+            padding: 10px; 
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border-radius: 12px;
+            border: 1px solid transparent;
+            transition: .3s ease-in-out;
+            backdrop-filter: blur(0px);
+            z-index: 0;
+
+            &:hover {
+
+                background-color: #30303025;
+                // cursor: pointer;
+                transform: scale(1);
+                backdrop-filter: blur(2px);
+                
+                h1 {
+                    transform: scale(1.1);
+                    opacity: 1;
+                }
+
+                * {
+
+                    opacity: 1;
+
+                }
+
+            }
+
+            * {
+
+                transition: .2s ease-in-out;
+                opacity: 1;
+
+            }
+
+            img {
+
+                width: 42px;
+
+            }
+
+            h1 {
+                color: #ffffff;
+                font-size: 20px;
+                letter-spacing: 1px;
+                font-weight: 100;
+                opacity: .9;
+                text-shadow: 1px 1px 2px black;
+
+            }
+
+        }
+
+    }
+
+}
+
+footer {
+
+    width: 100%;
+    position: absolute;
+    left: -50px;
+    bottom: 50px;
+    z-index: 0;
+
+    .icon-wrapper {
+        width: fit-content;
+        height: 45px;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff30;
+        transition: .2s ease-in-out;
+        margin: 0 auto;
+        padding: 15px;
+        gap: 10px;
+        color: rgba(255, 255, 255, 0.25);
+        
+        
+        // cursor: url('img/coursor.png'), auto;
+        &:hover {
+            background-color: #ffffff50;
+            backdrop-filter: blur(2px);
+            // cursor: url('img/coursor.png'), auto;
+        }
+
+        img {
+            height: 80px;
+            transition: .2s ease-in-out;
+            opacity: 1;
+            margin-top: 2px;
+            // cursor: url('img/coursor.png'), auto;
+            
+            &:hover {
+                transform: scale(1.2) translateY(-2px);
+                opacity: 1;
+            }
+    
+            &#backImage {
+                width: 24px;
+                height: 24px;
+                opacity: .6;
+                &:hover {
+                    transform: scale(1.2) translateY(-2px);
+                    opacity: 1;
+                }
+            }
+            &#swapImage {
+                width: 24px;
+                height: 24px;
+                opacity: .6;
+                &:hover {
+                    transform: scale(1.2) translateY(-2px);
+                    opacity: 1;
+                }
+            }
+            &#nextImage {
+                width: 24px;
+                height: 24px;
+                opacity: .6;
+                &:hover {
+                    transform: scale(1.2) translateY(-2px);
+                    opacity: 1;
+                }
+            }
+            &#stopImage {
+                display: none;
+
+            }
+
+        }
+
+    } h4 {
+        font-family: 'Stardew Valley';
+        font-weight: 100;
+        font-size: 15px;
+        color: white;
+    }
+    
+    
+}
+
+.junimo{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    right: 0;
+        img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.subfolder{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+@media (max-width: 836px){
+    .current-date * {
+    display: none;
+   }
+}
+
+.desktop .window .window-content main h1 {
+    font-family: monospace;
+    font-size: 10px;
+    letter-spacing: 1px;
+}

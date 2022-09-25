@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Stardew Valley';
+    src: url('StardewValley.woff2') format('woff2'),
+        url('StardewValley.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
